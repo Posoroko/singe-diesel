@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+      
+      
+     //les trouvailles
+    match /{path=**}/finds/{findId}
+    { 
+    	//lecture des trouvailles pour tout le monde
+    	allow read: if true;
+    
+    }
+    match /users/{userId}/finds/{findId}{
+    	//conditions sauvegarde trouvailles
+      allow write: if request.auth.uid == userId
+      			&& request.resource.data.country.size() < 25
+           	&& request.resource.data.country != null
+           	&& request.resource.data.createdAt != null
+            && request.resource.data.depth.size() < 25
+            && request.resource.data.description.size() < 500
+            && request.resource.data.filePath!= null
+           	&& request.resource.data.identification != null
+            && request.resource.data.metal != null
+            && request.resource.data.terrain.size() < 25
+      			&& request.resource.data.title != null
+      			&& request.resource.data.title.size() < 25
+            && request.resource.data.type != null
+            && request.resource.data.type.size() < 25
+            && request.resource.data.url != null
+            && request.resource.data.userId == userId
+            && request.resource.data.username == request.auth.token.name;
+    }
+    
+		//les photos des profil
+    match /users/{userId}/proPics/{propicId}
+    {
+    	//lecture pour authUsers de la photo active
+    	allow read: if request.auth != null && resource.data.published == true;
+      //lecture pour mainUser de toutes ses photos
+      allow read: if request.auth.uid == userId;
+      //écriture pour mainUser des photos de profil
+      allow write: if request.auth.uid == userId;
+    }
+  }
+}

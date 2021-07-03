@@ -1,0 +1,133 @@
+/*custom font*/
+
+    /*shippori*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+    /*montserra*/
+.shippori{
+    font-family: 'Shippori Mincho', serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+.sansSerif {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Great+Vibes&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Great+Vibes&family=Montserrat:wght@100&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Fondamento:ital@1&family=Great+Vibes&family=Montserrat:wght@100&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Fondamento:ital@1&family=Great+Vibes&family=Montserrat:wght@100&family=Rouge+Script&family=Tangerine:wght@700&display=swap');
+
+/*
+font-family: Bilbo Swash Caps, cursive;
+
+font-family: Fondamento, cursive;
+
+font-family: Great Vibes, cursive;
+
+font-family: Montserrat, sans-serif; (100 et 300)
+
+font-family: Rouge Script, cursive;
+
+font-family: Tangerine, cursive;
+*/
+
+
+
+.manuscrite{
+    font-family: 'Cormorant Garamond', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*variables*/
+
+:root {
+    --stripes1: #3f3736;
+    --stripes2: #352f24;
+    --dark: #12171a;
+    --lessdark: #352f24;
+    --light: white;
+    --funkytouch: rgb(114, 143, 175);
+}
+/* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */ 
+.background{
+    background: radial-gradient(ellipse at center,#141d19 0,#1c2529 100%);
+    padding-bottom: 50px;
+}
+
+
+
+.lightText{
+    color: var(--light);
+}
+.darkText{
+    color: var(--dark);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: var(--funkytouch);
+}
+
+/* common stylies */
+.moreButtonText{
+    text-decoration: none;
+    color: var(--dark)
+}
+
+.moreButtonBox{
+    width: 100%;
+    padding: 50px 20vw;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.moreButton{
+    padding: 20px;
+    background-color: var(--light);
+    border: 0px;
+    border-radius: 3px;
+    font-size: max(2vh, 16px);
+    cursor: pointer;
+    text-decoration: none;
+}
+/* container for section titles */
+.titleBox{
+    width: 100%;
+    padding-left: 10vw;
+}
+
+.title{
+    font-size: max(7vw, 50px);
+    padding-top: 5vh;
+}
+
+
+.subTitle{
+    font-size: max(5vw, 25px);
+    
+}
+.text{
+    font-size: 20px;
+    line-height: 150%;
+}
+
+/*container for homepage content sections*/
+.bigBox{
+    width: 100%;
+    padding: 10vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*container for content on sub pages - fixe la largeur des pages*/
+

@@ -1,0 +1,16 @@
+background
+
+lightText
+darkText
+
+title       (tous les titres de sections - agende, juan, compagnie, etc)
+
+text        (text de lecture)
+
+smallText   (text de détail)
+
+dark        (couleur foncée pour les objerts)
+light       (couleur pâle pour les objets)
+
+...bigBox   (container général)
+...Box (container plus précis)
