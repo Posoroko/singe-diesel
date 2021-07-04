@@ -52,7 +52,7 @@ export default {
         place-items: center;
     }
     .affiche{
-        width: min(500px, 100vw);
+        width: min(500px, 100%);
         margin: 20px;
     }
     .showName{

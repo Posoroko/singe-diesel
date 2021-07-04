@@ -43,10 +43,10 @@ export default {
     align-items: center;
   }
   .logo{
+    width: min(80%, 125px);
     margin: 10px;
 
 
-    
   }
   .menuBox{
     display: flex;

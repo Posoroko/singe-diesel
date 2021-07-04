@@ -144,7 +144,7 @@ export default {
   .txtLaCie{
     font-size: 25px;
     color: var(--light);
-    width: max(50%, 500px);
+    width: min(90%, 500px);
   }
   .juanBox{
     width: 100%;
@@ -158,7 +158,7 @@ export default {
     font-size: max(5vw, 50px);
   }
   .portrait{
-    width: min(100vw, 500px);
+    width: min(80%, 500px);
     margin: 0px 30px;
   }
   .juanTxtBox{

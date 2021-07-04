@@ -109,10 +109,11 @@ export default {
     width: min(300px, 100%);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .miniature{
-    height: 150px;
+    height: min(80vw, 150px);
 }
 .when{
     padding-left: 20px;

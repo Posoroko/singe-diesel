@@ -78,6 +78,9 @@ button:active{
 }
 
 /* common stylies */
+
+
+
 .moreButtonText{
     text-decoration: none;
     color: var(--dark)
@@ -85,17 +88,18 @@ button:active{
 
 .moreButtonBox{
     width: 100%;
-    padding: 50px 20vw;
+    padding: 0 20% 0 0;
     display: flex;
     justify-content: flex-end;
     position: relative;
 }
 .moreButton{
-    padding: 20px;
+    width: min(80%, 200px);
+    padding: 20px 0;
     background-color: var(--light);
     border: 0px;
     border-radius: 3px;
-    font-size: max(2vh, 16px);
+    font-size: max(2vh, 12px);
     cursor: pointer;
     text-decoration: none;
 }
@@ -131,3 +135,11 @@ button:active{
 
 /*container for content on sub pages - fixe la largeur des pages*/
 
+.cls-1{
+    font-size:46.29px;
+    font-family:Poppins-ExtraLight, Poppins;
+    font-weight:200;
+}
+.cls-1,.cls-2{
+    fill:#e9cc00;
+}
