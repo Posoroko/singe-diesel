@@ -191,7 +191,7 @@ export default {
     position: relative;
   }
   .juanBureau{
-    width: max(100%, 500px);
+    width: 100%;
     mix-blend-mode: lighten;
   }
 </style>
