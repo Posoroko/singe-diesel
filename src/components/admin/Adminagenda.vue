@@ -15,24 +15,24 @@
         <div class="dateFrBox">
             <label for="">date du spectacle:</label>
             <select class="dateFr jour" id="jour" v-model="day" >
-              <option>1</option>2<option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
               <option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option>
               <option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
             </select>
 
             <select class="dateFr mois" id="mois" v-model="month" >
-              <option value="0">janvier</option>
-              <option value="1">février</option>
-              <option value="2">mars</option>
-              <option value="3">avril</option>
-              <option value="4">mai</option>
-              <option value="5">juin</option>
-              <option value="6">juillet</option>
-              <option value="7">août</option>
-              <option value="8">septembre</option>
-              <option value="9">octobre</option>
-              <option value="10">novembre</option>
-              <option value="11">décembre</option>
+              <option value="01">janvier</option>
+              <option value="02">février</option>
+              <option value="03">mars</option>
+              <option value="04">avril</option>
+              <option value="05">mai</option>
+              <option value="06">juin</option>
+              <option value="07">juillet</option>
+              <option value="08">août</option>
+              <option value="09">septembre</option>
+              <option value="10">octobre</option>
+              <option value="11">novembre</option>
+              <option value="12">décembre</option>
             </select>
 
             <select class="dateFr année" id="année" v-model="year" >
@@ -67,7 +67,7 @@
         <span class="message"> {{error}} </span>
         <button class="pointer" v-if="!isPending">Confirmer</button>
         <button class="pointer" v-if="isPending">saving</button>
-        <button class="showDate" @click="click">click</button>
+
 
       </form>
 
@@ -104,12 +104,11 @@ export default {
     const user = projectAuth.currentUser
     const utilisateur = ref('')
     const nombreMaxDeDate = 100
-    
+
+
+    let dateString = ''
     const date = new Date()
 
-    function click(){
-      console.log(date)
-    }
     
 
     const { error, addDoc } = useCollection('agenda')
@@ -120,15 +119,17 @@ export default {
         
         if(year.value, month.value, day.value, heure.value && spectacle.value && ville.value && codePostal.value){
           
-          date.setFullYear(year.value)
-          date.setMonth(month.value)
-          date.setDate(day.value)
+          dateString = year.value + '-' + month.value + '-' + day.value
+          
+
+          const date = new Date(dateString)
+          
 
           isPending.value = true
           
           
           await addDoc ({
-            date: date.toLocaleDateString(),
+            date: dateString,  //date as a string
             day: day.value,
             month: month.value,
             year: year.value,
@@ -140,6 +141,7 @@ export default {
             utilisatuer: user.email,
             createdAt: timestamp()
           })
+          
           isPending.value = false
           error.value = 'la date a bien été ajoutée'
           emit('reload')
@@ -158,7 +160,7 @@ export default {
     }
 
     return { handleSubmit, date, day, month, year, heure, spectacle, lieu, user, 
-            ville, codePostal, isPending, error, addDoc, utilisateur, nombreMaxDeDate, button, click }
+            ville, codePostal, isPending, error, addDoc, utilisateur, nombreMaxDeDate, button }
 
   }
 

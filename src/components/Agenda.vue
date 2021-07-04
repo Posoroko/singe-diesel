@@ -60,13 +60,14 @@ export default {
     props: ['nombreMaxDeDate', 'button'],
     setup(props){
 
-        const {error, documents } = getCollection('agenda')
+        const { error, documents } = getCollection('agenda')
         
 
        onBeforeUpdate( () => {
-           console.log(documents.value.length)
            documents.value.forEach(doc => {
-           doc.date = doc.date.toDate().toLocaleDateString()
+               
+               doc.date = new Date(doc.date).toLocaleDateString()  //transformation to local format
+           
        });
 
        })

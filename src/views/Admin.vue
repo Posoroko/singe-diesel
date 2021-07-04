@@ -59,7 +59,6 @@ export default {
     const { user } = getUser
 
     const goToLogin = () => {
-      console.log('eric')
       router.push( { name: 'Login'})
     }
     
@@ -83,7 +82,6 @@ export default {
 
     //reloads the importImage (from importImage component) form
         function reloadForm() {
-          console.log('yessPapa')
             tab.value = null
             setTimeout(resolve, 1)
             function resolve(){
