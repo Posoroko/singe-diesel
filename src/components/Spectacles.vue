@@ -59,6 +59,7 @@ export default {
     .afficheBox{
         display: grid;
         place-items: center;
+        border: 1px solid red;
     }
     .affiche{
         width: min(500px, 100vw);

@@ -110,6 +110,7 @@ export default {
   
   .home{
     background-color: var(--dark);
+    overflow: hidden;
   }
   .topImgBox{
     width: 100%;
