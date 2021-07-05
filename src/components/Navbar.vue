@@ -24,12 +24,12 @@
     </div>
     <div class="popUpMenu sansSerif" v-if="mobileMenu">
         <img class="mobileMenuButton closeMenuButton" @click="openMobileMenu" v-if="mobileMenu" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Ficone-fermer-menu.png?alt=media&token=87898a92-0655-4705-a91b-1d10d24b56a3" alt="">
-        <router-link class="menu pointer" :to="{ name: 'Compagnie' }" >la compagnie</router-link>
-        <router-link class="menu pointer" :to="{ name: 'Juanperezescala' }" >Juan Perez-Escala</router-link>
-        <router-link class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
-        <router-link class="menu pointer" :to="{ name: 'Agenda' }" >Agenda</router-link>
-        <router-link class="menu pointer" :to="{ name: 'Galerie' }" >Galerie</router-link>
-        <router-link class="menu pointer" :to="{ name: 'Contact' }" >Contact</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Compagnie' }" >la compagnie</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Juanperezescala' }" >Juan Perez-Escala</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Agenda' }" >Agenda</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Galerie' }" >Galerie</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Contact' }" >Contact</router-link>
     </div>
     
   </div>
