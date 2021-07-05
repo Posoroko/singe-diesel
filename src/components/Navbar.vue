@@ -1,5 +1,5 @@
 <template>
-  <div class="navBar background">
+  <div class="navBar navAndFooter">
 
     <router-link class="homeBtn" :to="{ name: 'Home' }" >
       <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Flogo02.png?alt=media&token=03ec3bbe-ad3c-4387-8d12-b43f94003c35" alt="">

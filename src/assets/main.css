@@ -44,20 +44,24 @@ font-family: Tangerine, cursive;
 
 }
 
+
 /*variables*/
 
 :root {
     --stripes1: #3f3736;
     --stripes2: #352f24;
     --dark: #12171a;
-    --lessdark: #352f24;
+    --lessdark: #1f1d19;
     --light: white;
     --funkytouch: rgb(114, 143, 175);
 }
 /* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */ 
 .background{
-    background: radial-gradient(ellipse at center,#141d19 0,#1c2529 100%);
+    background-color: var(--dark);
     padding-bottom: 50px;
+}
+.navAndFooter{
+    background-color: var(--lessdark);
 }
 
 
@@ -88,14 +92,14 @@ button:active{
 
 .moreButtonBox{
     width: 100%;
-    padding: 0 20% 0 0;
+    padding: 5vh 20% 0 0;
     display: flex;
     justify-content: flex-end;
     position: relative;
 }
 .moreButton{
-    width: min(80%, 200px);
-    padding: 20px 0;
+
+    padding: 20px 20px;
     background-color: var(--light);
     border: 0px;
     border-radius: 3px;

@@ -1,5 +1,5 @@
 <template>
-  <section class="footerSection background">
+  <section class="footerSection navAndFooter">
      
          
           

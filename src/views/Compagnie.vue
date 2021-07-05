@@ -1,7 +1,7 @@
 <template>
   <section class="background page">
 
-        <img class="compagnieTop" src="gs://singe-diesel.appspot.com/images misc/juan01.jpg" alt="Juan Perez-Escala">
+        <img class="compagnieTop" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fjuan01.jpg?alt=media&token=39edd0c1-4d71-4d2a-a3f1-495244391381" alt="Juan Perez-Escala">
     
         <div class="titleBox">
           <h1 class="title lightText manuscrite">Compagnie Singe Diesel</h1>

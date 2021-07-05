@@ -67,19 +67,20 @@ export default {
 <style scoped>
 
 .spectacleBox{
-  margin: 40px 10vw;
-  padding: 40px;
+  width: 100%;
+  margin: 5vh 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 .photoSpectacle{
-  width: min(100vw, 500px);
+  width: min(100%, 500px);
+  align-self: center;
 }
 .textSpectacleBox{
-  width: min(100vw, 1000px);
-  padding: 40px 40px;
+  width: min(100vw, 800px);
+  padding: 5vh 5vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

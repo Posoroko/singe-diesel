@@ -27,7 +27,7 @@
         <div class="moreButtonBox">
             
             <button class="moreButton moreCompagnie sansSerif">
-              <router-link class="moreButtonText pointer" :to="{ name: 'Compagnie' }" >la compagnie</router-link>
+              <router-link class="moreButtonText pointer" :to="{ name: 'Compagnie' }" >découvrir...</router-link>
             </button>
         </div>
      
@@ -61,22 +61,23 @@
       </div>
 
 
+      <div class="juanBureauBox">
+          <img class="juanBureau" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fjuan-bureau-02.jpg?alt=media&token=1d50ce41-de85-43cc-bb3d-7e257ac6f166" alt="Juan Perez-Escala">
+      </div>
 
-
-    <div class="grandPereBox">
-      <img class="grandPere" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fgrand-p%C3%A8re.jpg?alt=media&token=221325b2-d2a0-450e-bb87-eb83858195f2" alt="marionnette Singe Diesel">
-    </div>
+    
 
     <Spectacles  />
 
 
-    <div class="juanBureauBox">
-      <img class="juanBureau" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fjuan-bureau-02.jpg?alt=media&token=1d50ce41-de85-43cc-bb3d-7e257ac6f166" alt="Juan Perez-Escala">
-    </div>
-
-
-    <Agenda :button="button" />
     
+    
+
+    <Agenda :button="button" :nombreMaxDeDate="nombreMaxDeDate" />
+    
+    <div class="grandPereBox">
+      <img class="grandPere" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fgrand-p%C3%A8re.jpg?alt=media&token=221325b2-d2a0-450e-bb87-eb83858195f2" alt="marionnette Singe Diesel">
+    </div>
     
     
 
@@ -88,6 +89,7 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 import Spectacles from '@/components/Spectacles.vue'
 import Agenda from '@/components/Agenda.vue'
 
@@ -97,8 +99,9 @@ export default {
   setup(){
     //activer le bouton 'toutes les dates' de l'agenda
     let button = true
+    const nombreMaxDeDate = ref(4)
 
-    return { button }
+    return { button, nombreMaxDeDate }
   }
 }
 </script>
@@ -144,7 +147,7 @@ export default {
   .txtLaCie{
     font-size: 25px;
     color: var(--light);
-    width: min(90%, 500px);
+    width: min(90%, 800px);
   }
   .juanBox{
     width: 100%;
@@ -160,6 +163,7 @@ export default {
   .portrait{
     width: min(80%, 500px);
     margin: 0px 30px;
+    align-self: center;
   }
   .juanTxtBox{
     width: min(100vw, 1000px);
@@ -177,7 +181,7 @@ export default {
   }
   .grandPereBox{
     width: 100%;
-    padding-top: 30vh;
+    padding-top: 5vh;
     display: grid;
     place-items: center;
   }

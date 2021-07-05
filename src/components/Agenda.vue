@@ -60,7 +60,7 @@ export default {
     props: ['nombreMaxDeDate', 'button'],
     setup(props){
 
-        const { error, documents } = getCollection('agenda')
+        const { error, documents } = getCollection('agenda', props.nombreMaxDeDate)
         
 
        onBeforeUpdate( () => {
