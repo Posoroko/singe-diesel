@@ -68,7 +68,7 @@ export default {
 
 .spectacleBox{
   width: 100%;
-  margin: 5vh 0;
+  padding: 5vh 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
