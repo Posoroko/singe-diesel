@@ -57,15 +57,12 @@ export default {
     width: 100%;
     padding: 0 5vw;
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content:  space-between;
     align-items: center;
   }
   .logo{
-    width: min(50%, 125px);
-    margin: 10px;
-
-
+    width: min(100%, 150px);
   }
   
   
@@ -122,8 +119,10 @@ export default {
     .popUpMenu{
       display: flex;
     }
+  }
+  @media (max-width: 285px) {
     .navBar{
-      flex-wrap:  nowrap;
+      justify-content: center;
     }
   }
 </style>

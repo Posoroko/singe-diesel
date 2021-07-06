@@ -38,8 +38,8 @@ export default {
 <style scoped>
     .footerSection{
         width: 100%;
+        padding: 2vh 0;
         display: flex;
-        padding: 10vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;

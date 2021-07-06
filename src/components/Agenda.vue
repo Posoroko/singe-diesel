@@ -4,7 +4,8 @@
 
         
 
-        <div class="bigBox" v-if="documents">
+        <div class="agendaBigBox" v-if="documents">
+
             <div class="titleBox">
                 <h1 class="title lightText manuscrite">Agenda</h1>
                 <h1 class="lightText" v-if="error">Suite à un problème, l'agenda n'a pas pu être chargée.</h1>
@@ -83,14 +84,17 @@ export default {
 </script>
 
 <style scoped>
+.agendaBigBox{
+    width: 100%;
+    padding: 10vh 2vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-.titre{
-    color: var(--light);
-    margin: 50px;
 }
-.dateInfo{
-    color: var(--light);
-}
+
 .carteDate{
     width: min(1500px, 100%);
     padding: 1vw;
@@ -98,15 +102,18 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 20px 0;
     /* color order for stripes: 1 - 2 - 2 - 1 - 1 - 2 - 2 */
     background-image: linear-gradient(45deg, var(--stripes1) 4.55%, var(--stripes2) 4.55%, var(--stripes2) 50%, var(--stripes1) 50%, var(--stripes1) 54.55%, var(--stripes2) 54.55%, var(--stripes2) 100%);
     background-size: 31.11px 31.11px;
     position: relative;
-    
+    box-sizing: ;
+}
+.dateInfo{
+    color: var(--light);
 }
 .imageAndDate{
-    width: min(300px, 100%);
+    /*width: min(300px, 100%);*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -119,7 +126,7 @@ export default {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 }
 

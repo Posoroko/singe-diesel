@@ -1,6 +1,6 @@
 <template>
 
-    <section class="background page">
+    <section class="background">
 
         <img class="juanTop" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fportrait-triple-nb.jpg?alt=media&token=354eb3de-7fb1-496f-9e03-51037ba774d9" alt="Juan Perez-Escala">
     
@@ -59,13 +59,12 @@ export default {
 <style scoped>
 
 .juanBox{
-  margin: 40px 10vw;
-
-  padding: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3vh;
 }
 .juanTop{
     width: 100%;
@@ -73,15 +72,12 @@ export default {
 
 .textJuan{
     width: min(100%, 1000px);
+    margin: 2vh 0;
     color: var(--light);
     display: block;
 }
 .portraitTriple{
     width: 100%;
-    padding: 50px 0;
 }
-.juan02{
-    width: 50%;
-    margin: 50px;
-}
+
 </style>

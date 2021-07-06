@@ -50,6 +50,7 @@ export default {
     }
     .afficheBigBox{
         width: 100%;
+        padding: 2vw;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -59,14 +60,14 @@ export default {
     .afficheBox{
         display: grid;
         place-items: center;
-        border: 1px solid red;
+
     }
     .affiche{
         width: min(500px, 100vw);
         margin: 5vh;
     }
     .showName{
-        font-size: 25px;
+        font-size: min(100%, 25px);
         color: var(--light);
 
     }

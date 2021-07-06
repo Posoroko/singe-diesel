@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
   .navBar{
-    width: 100%;
+    max-width: 100vw;
 
   } 
   .content{
@@ -42,6 +42,6 @@ export default {
 
   }
   .footer{
-    width: 100%;
+    max-width: 100vw;
   }
 </style>

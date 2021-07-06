@@ -57,8 +57,7 @@ font-family: Tangerine, cursive;
 }
 /* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */ 
 .background{
-    background-color: var(--dark);
-    padding-bottom: 50px;
+    background-color: #141310;
 }
 .navAndFooter{
     background-color: var(--lessdark);
@@ -98,8 +97,8 @@ button:active{
     position: relative;
 }
 .moreButton{
-
-    padding: 20px 20px;
+    width: min(100%, 250px);
+    padding: 20px;
     background-color: var(--light);
     border: 0px;
     border-radius: 3px;

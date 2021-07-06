@@ -1,6 +1,6 @@
 <template>
 
-    <section class="sectionSpectacle background page">
+    <section class="background">
     
         <div class="titleBox">
           <h1 class="title lightText manuscrite">Les Spectacles</h1>

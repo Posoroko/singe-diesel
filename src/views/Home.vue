@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home background">
     <div class="topImgBox">
       <!-- top image is set as a background in css -->
     </div>
@@ -61,9 +61,9 @@
       </div>
 
 
-      <div class="juanBureauBox">
-          <img class="juanBureau" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fjuan-bureau-02.jpg?alt=media&token=1d50ce41-de85-43cc-bb3d-7e257ac6f166" alt="Juan Perez-Escala">
-      </div>
+      
+      <img class="juanBureau" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fjuan-bureau-02.jpg?alt=media&token=1d50ce41-de85-43cc-bb3d-7e257ac6f166" alt="Juan Perez-Escala">
+      
 
     
 
@@ -109,7 +109,7 @@ export default {
 <style scoped>
   
   .home{
-    background-color: var(--dark);
+    width: 100%;
     overflow: hidden;
   }
   .topImgBox{
@@ -168,6 +168,7 @@ export default {
   }
   .juanTxtBox{
     width: min(100vw, 1000px);
+    padding: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -191,10 +192,7 @@ export default {
     mix-blend-mode: lighten;
 
   }
-  .juanBureauBox{
-    width: 100%;
-    position: relative;
-  }
+  
   .juanBureau{
     width: 100%;
     mix-blend-mode: lighten;

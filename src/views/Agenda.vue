@@ -1,5 +1,5 @@
 <template>
-    <section class="background page">
+    <section class="background">
         <Agenda :nombreMaxDeDate="nombreMaxDeDate" />
     </section>
 
@@ -12,7 +12,7 @@ import { ref } from 'vue'
 export default {
     components: { Agenda },
     setup(){
-        const nombreMaxDeDate = ref(1)
+        const nombreMaxDeDate = ref(1000)
 
 
         return { nombreMaxDeDate }
