@@ -130,7 +130,7 @@ button:active{
     display: inline-block;
   }
 .text{
-    font-size: max(2vh, 12px);
+    font-size: max(1.2vw, 12px);
     line-height: 150%;
 }
 
@@ -192,8 +192,8 @@ button:active{
   flex-wrap: wrap;
 }
 .showImgBox > img{
-  width: min(100%, 300px);
-  margin: 2vh 0;
+  width: min(95%, 300px);
+  margin: 1vw;
 }
 .showScore{
   width: 100%;

@@ -18,12 +18,13 @@
                         Embarquez pour une performance marionnettique dans les mondes de Tom. 
                     </p>
                     <div class="moreButtonBox">
-                
-                        <button class="moreButton sansSerif">
-                            <router-link class="moreButtonText pointer" :to="{ name: 'Sueno' }" >découvrir...</router-link> 
-                        </button>
+          
+                        <router-link class="pointer" :to="{ name: 'Sueno' }" >
+                            <button class="lightText moreButton sansSerif">
+                                découvrir...
+                            </button>
+                        </router-link>
                     </div>
-
                 </div>
         </div>
         
@@ -40,11 +41,15 @@
                          Ce spectacle est une plongée dans l’atelier de marionnettes de Juan Perez Escala et dans l’univers du réalisme 
                          magique et de la micro fiction, courant artistique d’Amérique du Sud.
                     </p>
+                    
+                   
                     <div class="moreButtonBox">
-                
-                        <button class="moreButton sansSerif">
-                            <router-link class="moreButtonText pointer" :to="{ name: 'Kazu' }" >découvrir...</router-link> 
-                        </button>
+          
+                        <router-link class="pointer" :to="{ name: 'Kazu' }" >
+                            <button class="lightText moreButton sansSerif">
+                                découvrir...
+                            </button>
+                        </router-link>
                     </div>
 
                 </div>
@@ -72,7 +77,7 @@ export default {
   flex-wrap: wrap;
 }
 .photoSpectacle{
-  width: min(100%, 500px);
+  width: min(100%, 300px);
   align-self: center;
 }
 .textSpectacleBox{

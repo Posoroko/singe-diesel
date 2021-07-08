@@ -18,7 +18,6 @@
       <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Equipe' }" >équipe artistique</router-link>
       <router-link class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
       <router-link class="menu pointer" :to="{ name: 'Agenda' }" >Agenda</router-link>
-      <router-link class="menu pointer" :to="{ name: 'Galerie' }" >Galerie</router-link>
       <router-link class="menu pointer" :to="{ name: 'Contact' }" >Contact</router-link>
     </div>
     <div class="mobileMenu">
