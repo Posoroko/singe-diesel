@@ -6,7 +6,7 @@
         <div class="bigBox contactBox">
 
             <div class="titleBox">
-                <h1 class="title lightText manuscrite contactElement">Contact</h1>
+                <h1 class="title lightText titleFont contactElement">Contact</h1>
             </div>
             <div class="contactCard">
 

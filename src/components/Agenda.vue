@@ -7,7 +7,7 @@
         <div class="agendaBigBox" v-if="documents">
 
             <div class="titleBox">
-                <h1 class="title lightText manuscrite">Agenda</h1>
+                <h1 class="title lightText titleFont">Agenda</h1>
                 <h1 class="lightText" v-if="error">Suite à un problème, l'agenda n'a pas pu être chargée.</h1>
             </div>
 
@@ -37,11 +37,14 @@
 
             </div>
 
+            
             <div class="moreButtonBox">
-                <button class="moreButton sansSerif">
-                    <router-link class="moreButtonText pointer" :to="{ name: 'Agenda' }" >Toutes les dates ...</router-link>
-                </button>
-                
+          
+                <router-link class="pointer" :to="{ name: 'Agenda' }" >
+                    <button class="lightText moreButton sansSerif">
+                      découvrir...
+                    </button>
+              </router-link>
             </div>
 
         </div>
@@ -107,7 +110,7 @@ export default {
     background-image: linear-gradient(45deg, var(--stripes1) 4.55%, var(--stripes2) 4.55%, var(--stripes2) 50%, var(--stripes1) 50%, var(--stripes1) 54.55%, var(--stripes2) 54.55%, var(--stripes2) 100%);
     background-size: 31.11px 31.11px;
     position: relative;
-    box-sizing: ;
+    
 }
 .dateInfo{
     color: var(--light);
@@ -130,8 +133,11 @@ export default {
     align-items: flex-start;
 }
 
-.date, .heure{
+.date{
     font-size: max(14px, 1.5vw);
+}
+.heure{
+    font-size: max(1vw, 14px);
 }
 .what{
     width: min(300px, 100%);

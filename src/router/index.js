@@ -8,6 +8,7 @@ import Agenda from '@/views/Agenda'
 import Juanperezescala from '@/views/Juanperezescala'
 import Galerie from '@/views/Galerie'
 import Contact from '@/views/Contact'
+import Equipe from '@/views/Equipe'
 
 import Sueno from '@/views/spectacles/Sueno'
 import Kazu from '@/views/spectacles/Kazu'
@@ -68,6 +69,11 @@ const routes = [
     path: '/kazu',
     name: 'Kazu',
     component: Kazu
+  },
+  {
+    path: '/équipe',
+    name: 'Equipe',
+    component: Equipe
   }
 
 

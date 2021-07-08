@@ -11,6 +11,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+.titleFont{
+    font-family: 'Uchen', serif;
+}
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Great+Vibes&family=Montserrat:wght@100&display=swap');
@@ -84,10 +88,6 @@ button:active{
 
 
 
-.moreButtonText{
-    text-decoration: none;
-    color: var(--dark)
-}
 
 .moreButtonBox{
     width: 100%;
@@ -99,7 +99,7 @@ button:active{
 .moreButton{
     width: min(100%, 250px);
     padding: 20px;
-    background-color: var(--light);
+    background-color: #352f24;
     border: 0px;
     border-radius: 3px;
     font-size: max(2vh, 12px);
@@ -113,17 +113,24 @@ button:active{
 }
 
 .title{
-    font-size: max(7vw, 50px);
+    font-size: max(4vw, 30px);
     padding-top: 5vh;
 }
 
 
 .subTitle{
-    font-size: max(5vw, 25px);
+    font-size: max(2vw, 16px);
     
 }
+.showStats{
+    font-size: max(2vh, 12px);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 1vh;
+    display: inline-block;
+  }
 .text{
-    font-size: 20px;
+    font-size: max(2vh, 12px);
     line-height: 150%;
 }
 
@@ -145,4 +152,88 @@ button:active{
 }
 .cls-1,.cls-2{
     fill:#e9cc00;
+}
+
+/*  Styles pour les pages spectacles     */
+
+.topImgBox{
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/grand-pere-juan.jpg?alt=media&token=465f4c39-ca73-4462-93ff-60eca8ab13f1);
+    background-position: center;
+    background-position-y: 45%; /* 100vh = 65%*/
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+  
+.showTitleBox{
+    width: min(100%, 1000px);
+    margin: auto;
+}
+.showBox{
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.textShow{
+  width: min(100%, 1000px);
+}
+.showImgBox{
+  width: 100%;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.showImgBox > img{
+  width: min(100%, 300px);
+  margin: 2vh 0;
+}
+.showScore{
+  width: 100%;
+}
+.distribution, .mentions{
+  padding: 3vh 0;
+}
+.distribution, .mentions{
+  width: min(100%, 1000px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.jobBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1vh 0;
+  border-bottom: 1px solid rgb(46, 46, 46);
+}
+.job1{
+  border-top: 1px solid rgb(46, 46, 46);
+}
+.job{
+  width: 30%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.name, ps{
+  width: 70%;
+  padding-left: 10px;
+  line-height: 150%;
+  display: flex;
+  align-items: flex-end;
+}
+.ps{
+  font-size: 12px;
+  padding-top: 3vh;
 }

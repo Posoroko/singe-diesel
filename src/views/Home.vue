@@ -14,7 +14,7 @@
 
       <div class="laCieBox">
 
-        <p class="txtLaCie text sansSerif">
+        <p class="txtLaCie text lightText sansSerif">
           La compagnie Singe Diesel est une compagnie de théâtre de marionnettes 
           dont Juan Perez Escala construit l’univers artistique, depuis le texte jusqu’à 
           la musique, en passant par la mise en scène et les marionnettes. Les 
@@ -26,9 +26,13 @@
 
         <div class="moreButtonBox">
             
-            <button class="moreButton moreCompagnie sansSerif">
-              <router-link class="moreButtonText pointer" :to="{ name: 'Compagnie' }" >découvrir...</router-link>
-            </button>
+            
+              <router-link class="pointer" :to="{ name: 'Compagnie' }" >
+                  <button class="lightText moreButton moreCompagnie sansSerif">
+                      découvrir...
+                  </button>
+              </router-link>
+            
         </div>
      
       </div>
@@ -39,9 +43,9 @@
 
         <div class="juanTxtBox">
 
-          <h1 class="juanTitle manuscrite">Juan <br> Perez-Escala</h1>
+          <h1 class="juanTitle titleFont">Juan <br> Perez-Escala</h1>
 
-          <p class="juanTxt text sansSerif">
+          <p class="text lightText sansSerif">
             Fils d'un comédien de la Comedia d’Argentine, et directeur du “theatre del bosque”, Juan est immergé dans le 
             théâtre dès son plus jeune âge. Mais il se tourne vers les Beaux Arts et multiplie les expériences en tant 
             que sculpteur et dessinateur. Autodidacte, il acquiert un savoir-faire de fabrication de marionnettes et de 
@@ -53,9 +57,12 @@
         </div>
 
         <div class="moreButtonBox">
-            <button class="moreButton moreJuan sansSerif">
-                <router-link class="moreButtonText pointer" :to="{ name: 'Juanperezescala' }" >Découvrir ...</router-link>
-            </button>
+          
+            <router-link class="pointer" :to="{ name: 'Juanperezescala' }" >
+                  <button class="lightText moreButton sansSerif">
+                      découvrir...
+                  </button>
+              </router-link>
         </div>
 
       </div>
@@ -75,9 +82,7 @@
 
     <Agenda :button="button" :nombreMaxDeDate="nombreMaxDeDate" />
     
-    <div class="grandPereBox">
-      <img class="grandPere" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fgrand-p%C3%A8re.jpg?alt=media&token=221325b2-d2a0-450e-bb87-eb83858195f2" alt="marionnette Singe Diesel">
-    </div>
+    
     
     
 
@@ -146,8 +151,6 @@ export default {
     place-items: center;
   }
   .txtLaCie{
-    font-size: 25px;
-    color: var(--light);
     width: min(90%, 800px);
   }
   .juanBox{
@@ -159,10 +162,11 @@ export default {
     flex-wrap: wrap;
   }
   .juanTitle{
-    font-size: max(5vw, 50px);
+    font-size: max(3vw, 30px);
+    line-height: 90%;
   }
   .portrait{
-    width: min(80%, 500px);
+    width: min(80%, 300px);
     margin: 0px 30px;
     align-self: center;
   }
@@ -177,10 +181,7 @@ export default {
     color: var(--light);
     margin: 50px 0px;
   }
-  .juanTxt{
-    font-size: 25px;
-    color: var(--light);
-  }
+  
   .grandPereBox{
     width: 100%;
     padding-top: 5vh;

@@ -5,7 +5,7 @@
         <img class="juanTop" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fportrait-triple-nb.jpg?alt=media&token=354eb3de-7fb1-496f-9e03-51037ba774d9" alt="Juan Perez-Escala">
     
         <div class="titleBox">
-          <h1 class="title lightText manuscrite">Juan Perez-Escala</h1>
+          <h1 class="juanTitlen title lightText titleFont">Juan Perez-Escala</h1>
         </div>
 
         <div class="juanBox">

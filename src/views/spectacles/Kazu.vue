@@ -1,30 +1,170 @@
 <template>
-      <section class="background page">
+      <section class="background">
 
-        <img class="suenoTop" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fjuan01.jpg?alt=media&token=39edd0c1-4d71-4d2a-a3f1-495244391381" alt="Juan Perez-Escala">
+          <div class="topImgBox">
+                
+          </div>
+
+        
     
-        <div class="titleBox">
-          <h1 class="title lightText manuscrite">Juan Perez-Escala</h1>
+        <div class="showTitleBox">
+          <h1 class="title lightText titleFont">Kazu</h1>
+          <h2 class="lightText sansSerif showStats">
+            Tout public à partir de 8 ans / CE2
+            <br>
+            
+            Kazu dans la nuit: 1h 
+            <br>
+            Kazu et les hommes volants: 45min
+          </h2>
         </div>
+       
 
-        <div class="kazuBox">
+        <div class="showBox">
 
-            <p class="lightText text sansSerif">
-                Né en 1979 en Argentine, son enfance est bercée par le théâtre et la marionnette. Avec son père comédien à la Comédie d’Argentine et directeur du théâtre « del bosque » à la Plata et ses proches marionnettistes, il apprend dès son plus jeune âge à fabriquer les marionnettes et à inventer des histoires. Avec son ami d’enfance, ils sillonnent les bidonvilles des alentours de Buenos Aires pour apprendre aux enfants des rues les techniques et l’imaginaire de la marionnette. La magie consiste à créer un univers à partir d’un bout de papier. « rien ne se perd, tout se transforme ».
-                <br>
-                <br>
-                    Après le lycée des Beaux-arts en Argentine il débarque en France à 19 ans pour rejoindre son père installé depuis peu en Bretagne. 
-                De là il devient sculpteur de figurines en résine et intègre le milieu artistique breton par la rencontre avec la Cie Tro-Héol avec 
-                qui il collaborera pendant 3 ans. Il découvre également les contes et légendes de la Bretagne et plus particulièrement celles des 
-                Monts d’Arrée avec des conteurs du pays tels que Claude Le Lann et Jean-Marie Scraigne.        
+            <p class=" lightText textShow text sansSerif">
+                
+                    Ce spectacle est une plongée dans l’atelier de marionnettes de Juan Perez Escala et dans l’univers 
+                    du réalisme magique et de la micro fiction, courant artistique d’Amérique du Sud. 
+                    <br>
+                    <br>
+                    Les histoires qu’il 
+                    nous raconte ne sont pas des histoires. Ni des poèmes. Pas vraiment des haïkus. Pas non plus des blagues 
+                    ni des petits contes. Il leur a donné un nom : ce sont des « kazus ». 
+                    <br>
+                    <br>
+                     Juan nous emporte avec délicatesse 
+                    dans son monde où l’amour, la vie, la mort s’entrelacent. Il sublime le quotidien, banalise la folie et la mélancolie. 
+                    Et au fur et à mesure des kazus qui s’enchaînent, on se rend bien compte qu’on y parle aussi d’une chose plus 
+                    intime et profonde : Kazu est éperdument amoureux de Lou, mais Lou n’est plus là. Pourtant, l’amour est toujours 
+                    vivant et joyeux... 
+                    <br>
+                    <br>
+                    Marionnettes, musique et dessins en live se télescopent pour créer une poésie émouvante et philosophique.
+            </p>
+            <div class="showImgBox">
+                <img src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FSue%C3%B1o%2Fsueno01.jpg?alt=media&token=01fa7026-dad3-440b-b675-e78621ad7de9" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FSue%C3%B1o%2Fsueno02.jpg?alt=media&token=675f969f-513a-42ab-be69-4929aa7fc950" alt="">
+            </div>
+
+            <p class="lightText textShow text sansSerif" >
+
+                    <span class="text lightText sansSerif">
+                        Il existe deux versions du spectacle de KAZU : 
+                        <br>
+                        <br>
+                    </span>
+                    
+                    Kazu dans la nuit : grande forme / 1h00 / Juan (marionnette) et Vincent (musique)
+                    <br>
+                    Kazu et les hommes volants : petite forme / 45min / Juan en solo
+
             </p>
 
-            
+        </div>
+
+        <div class="showScore">
+          
+
+            <div class="distribution">
+                <div class="jobBox">
+
+                    <div class="job subTitle lightText sansSerif">
+                      Distribution
+                    </div>
+
+                    <div class="name text lightText sansSerif">
+                      
+                    </div>
+
+                </div>
+                <div class="jobBox">
+
+                    <div class="job text lightText sansSerif">
+                      Conception et mise en scène :
+                    </div>
+
+                    <div class="name text lightText sansSerif">
+                        Juan Perez-Escala
+                    </div>
+
+                </div>
 
 
-            
+                <div class="jobBox">
 
-            <img class="juan02" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fla-tete-de-juan-perez-escala-est-pleine-de-personnages.jpg?alt=media&token=00479521-0de4-4dbc-8b3b-0840dccb74e1" alt="">
+                    <div class="job text lightText sansSerif">
+                      interprète :
+                    </div>
+
+                    <div class="name text lightText sansSerif">
+                        Juan Perez-Escala
+                    </div>
+
+                </div>
+
+                <div class="jobBox">
+
+                    <div class="job text lightText sansSerif">
+                        musique, lumière :
+                    </div>
+
+                    <div class="name text lightText sansSerif">
+                        Vincent Roudaut
+                    </div>
+
+                </div>
+
+                
+          </div>
+
+          <div class="mentions">
+
+            <div class="jobBox">
+
+                    <div class="job subTitle lightText sansSerif">
+                      Distribution
+                    </div>
+
+                    <div class="name text lightText sansSerif">
+                      
+                    </div>
+
+                </div>
+
+            <div class="jobBox job1">
+
+                <div class="job text lightText sansSerif">
+                   production:
+                </div>
+
+                <div class="name text lightText sansSerif">
+                    Compagnie Singe Diesel
+                </div>
+
+            </div>
+
+            <div class="jobBox">
+
+                <div class="job text lightText sansSerif">
+                   co-producteurs:
+                </div>
+
+                <div class="name text lightText sansSerif">
+                    -La Maison du théâtre (Brest) <br>
+                    -Coopérative de production ANCRE <br>
+                    - Espace Glenmor (Carhaix) <br>
+                    - Ville de Guilers
+                    <br>
+                    
+                    
+                </div>
+                
+
+            </div>
+
+
+          </div>
 
             
 
@@ -41,6 +181,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 
 </style>

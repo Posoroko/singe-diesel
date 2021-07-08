@@ -1,16 +1,21 @@
 <template>
   <div class="navBar navAndFooter">
 
-    <router-link class="homeBtn" :to="{ name: 'Home' }" >
-      <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Flogo02.png?alt=media&token=03ec3bbe-ad3c-4387-8d12-b43f94003c35" alt="">
+
+    
+
+      <img @click="handleClick" class="logo pointer" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Flogo-long.png?alt=media&token=104ad1a5-4877-4818-bf34-318920f4ddae" alt="logo singe diesel">
      
-    </router-link> 
+
+      
+
 
     
 
     <div class="menuBox sansSerif">
       <router-link class="menu pointer" :to="{ name: 'Compagnie' }" >la compagnie</router-link>
       <router-link class="menu pointer" :to="{ name: 'Juanperezescala' }" >Juan Perez-Escala</router-link>
+      <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Equipe' }" >équipe artistique</router-link>
       <router-link class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
       <router-link class="menu pointer" :to="{ name: 'Agenda' }" >Agenda</router-link>
       <router-link class="menu pointer" :to="{ name: 'Galerie' }" >Galerie</router-link>
@@ -26,6 +31,7 @@
         <img class="mobileMenuButton closeMenuButton" @click="openMobileMenu" v-if="mobileMenu" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Ficone-fermer-menu.png?alt=media&token=87898a92-0655-4705-a91b-1d10d24b56a3" alt="">
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Compagnie' }" >la compagnie</router-link>
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Juanperezescala' }" >Juan Perez-Escala</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Equipe' }" >équipe artistique</router-link>
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Agenda' }" >Agenda</router-link>
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Galerie' }" >Galerie</router-link>
@@ -37,16 +43,22 @@
 
 <script>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 export default {
   setup(){
     let mobileMenu = ref(false)
+    const router  = useRouter()
+
+    function handleClick() {
+      router.push( { name: 'Home'})
+    }
 
     function openMobileMenu() {
       mobileMenu.value = !mobileMenu.value
     }
 
 
-    return { openMobileMenu, mobileMenu }
+    return { openMobileMenu, mobileMenu, handleClick }
   }
 
 }
@@ -55,7 +67,7 @@ export default {
 <style scoped>
     .navBar{
     width: 100%;
-    padding: 0 5vw;
+    padding: 1vh 5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content:  space-between;
@@ -63,12 +75,16 @@ export default {
   }
   .logo{
     width: min(100%, 150px);
+    margin-top: 6px;  /* marge pour qu'il soit bien centré verticalement */
   }
-  
+  .homeBtn{
+    display: block;
+    width: 200px;
+  }
   
   .menu, .homeBtn{
     color: var(--light);
-    font-size: max(20px, 5%);
+    font-size: max(2vh, 12px);
     margin: 10px 10px;
     text-decoration: none;
   }
@@ -118,6 +134,7 @@ export default {
     }
     .popUpMenu{
       display: flex;
+      align-self: flex-end;
     }
   }
   @media (max-width: 285px) {

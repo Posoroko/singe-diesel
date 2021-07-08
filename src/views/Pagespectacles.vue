@@ -3,7 +3,7 @@
     <section class="background">
     
         <div class="titleBox">
-          <h1 class="title lightText manuscrite">Les Spectacles</h1>
+          <h1 class="title lightText titleFont">Les Spectacles</h1>
         </div>
 
         <div class="suenoBox spectacleBox">
@@ -15,9 +15,7 @@
                     <h1 class="title spectacleTitle lightText manuscrite">Sueño</h1>
 
                     <p class="textSpectacle text sansSerif">
-                        pariatur nisi officia sint irure fugiat cillum.Tempor Lorem officia nostrud do tempor eu. Reprehenderit adipisicing sunt cupidatat magna commodo eiusmod excepteur velit excepteur sunt nisi eiusmod id. 
-                        Sint commodo aliquip pariatur nisi officia sint irure fugiat cillum.Tempor Lorem officia nostrud do tempor eu. Reprehenderit adipisicing sunt cupidatat magna commodo eiusmod excepteur velit excepteur sunt nisi eiusmod id. 
-                        Sint commodo aliquip pariatur nisi officia sint 
+                        Embarquez pour une performance marionnettique dans les mondes de Tom. 
                     </p>
                     <div class="moreButtonBox">
                 
@@ -39,9 +37,8 @@
                     <h1 class="title spectacleTitle lightText manuscrite">Kazu</h1>
 
                     <p class="textSpectacle text sansSerif">
-                        pariatur nisi officia sint irure fugiat cillum.Tempor Lorem officia nostrud do tempor eu. Reprehenderit adipisicing sunt cupidatat magna commodo eiusmod excepteur velit excepteur sunt nisi eiusmod id. 
-                        Sint commodo aliquip pariatur nisi officia sint irure fugiat cillum.Tempor Lorem officia nostrud do tempor eu. Reprehenderit adipisicing sunt cupidatat magna commodo eiusmod excepteur velit excepteur sunt nisi eiusmod id. 
-                        Sint commodo aliquip pariatur nisi officia sint 
+                         Ce spectacle est une plongée dans l’atelier de marionnettes de Juan Perez Escala et dans l’univers du réalisme 
+                         magique et de la micro fiction, courant artistique d’Amérique du Sud.
                     </p>
                     <div class="moreButtonBox">
                 

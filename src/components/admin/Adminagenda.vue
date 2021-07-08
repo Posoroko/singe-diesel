@@ -56,7 +56,8 @@
         <select class="inputField" v-model="spectacle"  >
             <option>spectacle</option>
             <option>Sueño</option>
-            <option>Kazu</option>
+            <option>Kazu et es hommes volants</option>
+            <option>Kazu dans la nuit</option>
         </select>
 
 
