@@ -34,7 +34,8 @@
                 <div class="where">
                     <span class="dateInfo ville sansSerif"> {{doc.lieu}} - {{doc.ville}} - ({{doc.codePostal}}) </span>             
                 </div>
-
+                
+               
             </div>
 
             
@@ -61,10 +62,11 @@ import getCollection from '@/composables/getCollection'
 
 
 export default {
-    props: ['nombreMaxDeDate', 'button'],
+    props: ['nombreMaxDeDate' ],
     setup(props){
 
         const { error, documents } = getCollection('agenda', props.nombreMaxDeDate)
+        
         
 
        onBeforeUpdate( () => {
@@ -79,7 +81,7 @@ export default {
     
 
         return { error, documents }
-        //document.value[i].date.toDate().toLocaleDateString()
+       
 
     }
 
@@ -87,6 +89,15 @@ export default {
 </script>
 
 <style scoped>
+.dateErase{
+    position: absolute;
+    background-color: rgb(119, 34, 1);
+    right: 0;
+    top: 0;
+    border: 0;
+    padding: 2px;
+
+}
 .agendaBigBox{
     width: 100%;
     padding: 10vh 2vw;
@@ -158,10 +169,10 @@ export default {
     align-items: flex-end;
 }
 .codePostal{
-    font-size: max(20px, 1vw);
+    font-size: max(12px, 1vw);
 }
 .ville{
-    font-size: max(20px, 1vw);
+    font-size: max(12px, 1vw);
 }
 
 </style>

@@ -56,7 +56,7 @@
         <select class="inputField" v-model="spectacle"  >
             <option>spectacle</option>
             <option>Sueño</option>
-            <option>Kazu et es hommes volants</option>
+            <option>Kazu et les hommes volants</option>
             <option>Kazu dans la nuit</option>
         </select>
 
@@ -73,7 +73,7 @@
       </form>
 
       <div class="componentBox">
-        <Agenda :nombreMaxDeDate="nombreMaxDeDate" :button="button" />
+        
       </div>
 
   </section>
@@ -87,11 +87,10 @@ import Agenda from '@/components/Agenda.vue'
 
 
 export default {
-  components: { Agenda },
   setup( props, { emit }){
 
     //désactiver le bouton 'toutes les dates' de l'agenda
-    let button = false
+    
 
     const day = ref()
     const month = ref()
@@ -105,6 +104,7 @@ export default {
     const user = projectAuth.currentUser
     const utilisateur = ref('')
     const nombreMaxDeDate = 100
+    const admin = ref(true);
 
 
     let dateString = ''
@@ -161,7 +161,7 @@ export default {
     }
 
     return { handleSubmit, date, day, month, year, heure, spectacle, lieu, user, 
-            ville, codePostal, isPending, error, addDoc, utilisateur, nombreMaxDeDate, button }
+            ville, codePostal, isPending, error, addDoc, utilisateur, nombreMaxDeDate, admin }
 
   }
 
