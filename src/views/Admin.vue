@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="what">
-                    <span class="dateInfo subTitle sansSerif"> {{doc.spectacle}} </span>
+                    <span class="dateInfo spectacle sansSerif"> {{doc.spectacle}} </span>
                 </div>
 
                 <div class="where">
@@ -209,91 +209,7 @@ export default {
   .isOn{
     background-color: var(--funkytouch);
   }
- /* style de l'agenda */
-
- .dateErase{
-    position: absolute;
-    background-color: rgb(119, 34, 1);
-    right: 0;
-    top: 0;
-    border: 0;
-    padding: 2px;
-
-}
-.agendaBigBox{
-    width: 100%;
-    padding: 10vh 2vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-}
-
-.carteDate{
-    width: min(1500px, 100%);
-    padding: 1vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    /* color order for stripes: 1 - 2 - 2 - 1 - 1 - 2 - 2 */
-    background-image: linear-gradient(45deg, var(--stripes1) 4.55%, var(--stripes2) 4.55%, var(--stripes2) 50%, var(--stripes1) 50%, var(--stripes1) 54.55%, var(--stripes2) 54.55%, var(--stripes2) 100%);
-    background-size: 31.11px 31.11px;
-    position: relative;
-    
-}
-.dateInfo{
-    color: var(--light);
-}
-.imageAndDate{
-    /*width: min(300px, 100%);*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.miniature{
-    height: min(80vw, 150px);
-}
-.when{
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.date{
-    font-size: max(14px, 1.5vw);
-}
-.heure{
-    font-size: max(1vw, 14px);
-}
-.what{
-    width: min(300px, 100%);
-    display: flex;
-    justify-content: flex-start;
-    place-items: flex-end;
-}
-
-
-.where{
-    width: min(300px, 100%);
-    font-size: max(20px, 1.5vw);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
-.codePostal{
-    font-size: max(12px, 1vw);
-}
-.ville{
-    font-size: max(12px, 1vw);
-}
+ 
   
   
   

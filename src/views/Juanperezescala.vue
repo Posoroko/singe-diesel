@@ -1,8 +1,11 @@
 <template>
 
     <section class="background">
+        <div class="juanTopImageBox topImgBox">
+                
+          </div>
 
-        <img class="juanTop" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fportrait-triple-nb.jpg?alt=media&token=354eb3de-7fb1-496f-9e03-51037ba774d9" alt="Juan Perez-Escala">
+   
     
         <div class="titleBox">
           <h1 class="juanTitlen title lightText titleFont">Juan Perez-Escala</h1>
@@ -11,8 +14,13 @@
         <div class="juanBox">
 
             <p class="textJuan text sansSerif">
-                Né en 1979 en Argentine, son enfance est bercée par le théâtre et la marionnette. Avec son père comédien à la Comédie d’Argentine et directeur du théâtre « del bosque » à la Plata et ses proches marionnettistes, il apprend dès son plus jeune âge à fabriquer les marionnettes et à inventer des histoires. Avec son ami d’enfance, ils sillonnent les bidonvilles des alentours de Buenos Aires pour apprendre aux enfants des rues les techniques et l’imaginaire de la marionnette. La magie consiste à créer un univers à partir d’un bout de papier. « rien ne se perd, tout se transforme ».
-                <br>
+               Fils d'un comédien de la Comedia d’Argentine, et directeur du “theatre del bosque”, Juan est immergé dans le 
+            théâtre dès son plus jeune âge. Mais il se tourne vers les Beaux Arts et multiplie les expériences en tant 
+            que sculpteur et dessinateur. Autodidacte, il acquiert un savoir-faire de fabrication de marionnettes et de 
+            dramaturgie par l'image. Arrivé en France à 20 ans, il collabore à des séries d'animation et de marionnettes 
+            sur Canal + et sur France 2. En s’installant en Bretagne, il entame des collaborations avec des compagnies de 
+            marionnettes en tant que constructeur. A partir de 2011, Juan devient le metteur en scène de la compagnie Singe Diesel. Il écrit alors ses propres histoires et approfondit son univers graphique. 
+          <br>
                 <br>
                     Après le lycée des Beaux-arts en Argentine il débarque en France à 19 ans pour rejoindre son père installé depuis peu en Bretagne. 
                 De là il devient sculpteur de figurines en résine et intègre le milieu artistique breton par la rencontre avec la Cie Tro-Héol avec 
@@ -66,8 +74,8 @@ export default {
     justify-content: center;
     padding-bottom: 3vh;
 }
-.juanTop{
-    width: 100%;
+.juanTopImageBox{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fportrait-triple-nb.jpg?alt=media&token=354eb3de-7fb1-496f-9e03-51037ba774d9);
 }
 
 .textJuan{

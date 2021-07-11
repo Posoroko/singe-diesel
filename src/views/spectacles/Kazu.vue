@@ -1,7 +1,7 @@
 <template>
       <section class="background">
 
-          <div class="topImgBox">
+          <div class="kazuTopImgBox topImgBox">
                 
           </div>
 
@@ -43,8 +43,8 @@
                     Marionnettes, musique et dessins en live se télescopent pour créer une poésie émouvante et philosophique.
             </p>
             <div class="showImgBox">
-                <img src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FSue%C3%B1o%2Fsueno01.jpg?alt=media&token=01fa7026-dad3-440b-b675-e78621ad7de9" alt="">
-                <img src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FSue%C3%B1o%2Fsueno02.jpg?alt=media&token=675f969f-513a-42ab-be69-4929aa7fc950" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FKazu%2Fkazu01.jpg?alt=media&token=f61dbecf-ba0a-4bd2-a170-c6cadd59fed8" alt="marionnette Kazu Singe Diesel">
+                <img src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FKazu%2Fkazu02.jpg?alt=media&token=e6191f3f-f2d9-440c-8a3b-58ff6e9b2a1e" alt="Kazu Singe Diesel">
             </div>
 
             <p class="lightText textShow text sansSerif" >
@@ -182,6 +182,9 @@ export default {
 </script>
 
 <style scoped>
+.kazuTopImgBox{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FKazu%2Fsc%C3%A8ne-kazu_light.jpg?alt=media&token=7281f51b-bcb6-40fd-8489-a2bfbf32686d);
+}
 
 
 </style>

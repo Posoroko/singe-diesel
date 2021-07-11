@@ -1,7 +1,7 @@
 <template>
       <section class="background page">
 
-          <div class="topImgBox">
+          <div class="suenoTopImgBox topImgBox">
                 
           </div>
 
@@ -223,6 +223,9 @@ export default {
 </script>
 
 <style scoped>
+.suenoTopImgBox{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FSue%C3%B1o%2Fgrand-pere-juan.jpg?alt=media&token=ef846cdc-8628-42b4-9d1b-1982e1eef4cb);
+}
 
 
 </style>

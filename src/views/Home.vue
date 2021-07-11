@@ -49,9 +49,7 @@
             Fils d'un comédien de la Comedia d’Argentine, et directeur du “theatre del bosque”, Juan est immergé dans le 
             théâtre dès son plus jeune âge. Mais il se tourne vers les Beaux Arts et multiplie les expériences en tant 
             que sculpteur et dessinateur. Autodidacte, il acquiert un savoir-faire de fabrication de marionnettes et de 
-            dramaturgie par l'image. Arrivé en France à 20 ans, il collabore à des séries d'animation et de marionnettes 
-            sur Canal + et sur France 2. En s’installant en Bretagne, il entame des collaborations avec des compagnies de 
-            marionnettes en tant que constructeur. A partir de 2011, Juan devient le metteur en scène de la compagnie Singe Diesel. Il écrit alors ses propres histoires et approfondit son univers graphique. 
+            dramaturgie par l'image.
           </p>
 
         </div>
@@ -104,7 +102,7 @@ export default {
   setup(){
     //activer le bouton 'toutes les dates' de l'agenda
     let button = true
-    const nombreMaxDeDate = ref(4)
+    const nombreMaxDeDate = ref(3)
 
     return { button, nombreMaxDeDate }
   }
