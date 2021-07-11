@@ -223,9 +223,9 @@ button:active{
   padding-right: 10px;
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
+  text-align: right;
 }
-.name, ps{
+.name, .ps{
   width: 70%;
   padding-left: 10px;
   line-height: 150%;

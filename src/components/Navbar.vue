@@ -32,9 +32,8 @@
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Juanperezescala' }" >Juan Perez-Escala</router-link>
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Equipe' }" >équipe artistique</router-link>
         <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
-        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Agenda' }" >Agenda</router-link>
-        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Galerie' }" >Galerie</router-link>
-        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Contact' }" >Contact</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Agenda' }" >agenda</router-link>
+        <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Contact' }" >contact</router-link>
     </div>
     
   </div>

@@ -10,7 +10,7 @@
         <div class="showTitleBox">
           <h1 class="title lightText titleFont">Sueño</h1>
           <h2 class="lightText sansSerif showStats">
-            à partir de 9ans / cm2
+            à partir de 9 ans / cm2
            <br>
            1h
           </h2>
@@ -82,7 +82,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                        musique, regards complices :
+                        musique, <br> regards complices :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -118,7 +118,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      construction de marionnettes :
+                      construction de <br> marionnettes :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -142,7 +142,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      Lumières :
+                      lumières :
                     </div>
 
                     <div class="name text lightText sansSerif">

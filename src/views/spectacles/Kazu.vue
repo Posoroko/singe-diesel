@@ -81,7 +81,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      conception et mise en scène :
+                      conception et <br> mise en scène :
                     </div>
 
                     <div class="name text lightText sansSerif">
