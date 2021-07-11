@@ -1,6 +1,6 @@
 <template>
     <section class="background">
-        <Agenda :nombreMaxDeDate="nombreMaxDeDate" :admin="admin" />
+        <Agenda :nombreMaxDeDate="nombreMaxDeDate" :button="button" />
     </section>
 
 </template>
@@ -13,10 +13,10 @@ export default {
     components: { Agenda },
     setup(){
         const nombreMaxDeDate = ref(1000)
-        const admin = ref(false)
+        const button = ref(false)
 
 
-        return { nombreMaxDeDate }
+        return { nombreMaxDeDate, button }
     }
 
 }
