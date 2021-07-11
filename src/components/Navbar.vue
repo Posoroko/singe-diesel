@@ -17,8 +17,8 @@
       <router-link class="menu pointer" :to="{ name: 'Juanperezescala' }" >Juan Perez-Escala</router-link>
       <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Equipe' }" >équipe artistique</router-link>
       <router-link class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
-      <router-link class="menu pointer" :to="{ name: 'Agenda' }" >Agenda</router-link>
-      <router-link class="menu pointer" :to="{ name: 'Contact' }" >Contact</router-link>
+      <router-link class="menu pointer" :to="{ name: 'Agenda' }" >agenda</router-link>
+      <router-link class="menu pointer" :to="{ name: 'Contact' }" >contact</router-link>
     </div>
     <div class="mobileMenu">
       <img class="mobileMenuButton" @click="openMobileMenu" v-if="!mobileMenu" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Ficone-menu.png?alt=media&token=964c0b8c-f5d2-4285-b2e1-325e53fb9016" alt="">

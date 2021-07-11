@@ -39,7 +39,7 @@
             </div>
 
             
-            <div class="moreButtonBox">
+            <div class="moreButtonBox" v-if="admin">
           
                 <router-link class="pointer" :to="{ name: 'Agenda' }" >
                     <button class="lightText moreButton sansSerif">
@@ -62,7 +62,7 @@ import getCollection from '@/composables/getCollection'
 
 
 export default {
-    props: ['nombreMaxDeDate' ],
+    props: ['nombreMaxDeDate', 'admin' ],
     setup(props){
 
         const { error, documents } = getCollection('agenda', props.nombreMaxDeDate)

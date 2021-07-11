@@ -12,9 +12,9 @@
 
                 <div class="adressBox text lightText sansSerif contactElement">
                     <p> 
-                        <span> Compagnie SingeDiésel </span> 
+                        <span> Compagnie Singe Diesel </span> 
                         <br>
-                        18, rue Saint Valentin <br>
+                        18, rue Saint-Valentin <br>
                         29820 Guilers, France 
                     </p>
                 </div>
@@ -23,14 +23,14 @@
 
                     <div class="mailBox">
 
-                        <p class="text lightText sansSerif">informations:</p>
+                        <p class="text lightText sansSerif">informations :</p>
                         <p class="mail lightText sansSerif">singediesel@gmail.com</p>
 
                     </div>
 
                     <div class="mailBox lastMailBox">
 
-                        <p class="text lightText sansSerif">diffusion</p>
+                        <p class="text lightText sansSerif">diffusion :</p>
                         <p class="mail  lightText sansSerif">all.et.compagnies@gmail.com</p>
 
                     </div>

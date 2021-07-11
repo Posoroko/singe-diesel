@@ -13,9 +13,9 @@
             Tout public à partir de 8 ans / CE2
             <br>
             
-            Kazu dans la nuit: 1h 
+            Kazu dans la nuit : 1h 
             <br>
-            Kazu et les hommes volants: 45min
+            Kazu et les hommes volants : 45min
           </h2>
         </div>
        
@@ -81,7 +81,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      Conception et mise en scène :
+                      conception et mise en scène :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -123,7 +123,7 @@
             <div class="jobBox">
 
                     <div class="job subTitle lightText sansSerif">
-                      Distribution
+                      Mentions
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -135,7 +135,7 @@
             <div class="jobBox job1">
 
                 <div class="job text lightText sansSerif">
-                   production:
+                   production :
                 </div>
 
                 <div class="name text lightText sansSerif">
@@ -147,12 +147,12 @@
             <div class="jobBox">
 
                 <div class="job text lightText sansSerif">
-                   co-producteurs:
+                   co-producteurs :
                 </div>
 
                 <div class="name text lightText sansSerif">
-                    -La Maison du théâtre (Brest) <br>
-                    -Coopérative de production ANCRE <br>
+                    - La Maison du théâtre (Brest) <br>
+                    - Coopérative de production ANCRE <br>
                     - Espace Glenmor (Carhaix) <br>
                     - Ville de Guilers
                     <br>

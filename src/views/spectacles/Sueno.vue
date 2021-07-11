@@ -57,7 +57,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      Texte et mise en scène :
+                      texte et mise en scène :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="name text lightText sansSerif">
-                        Juan Perez-Escala et vincent Roudaut
+                        Juan Perez-Escala et Vincent Roudaut
                     </div>
 
                 </div>
@@ -82,7 +82,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                        musique, regard complice :
+                        musique, regards complices :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -106,7 +106,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                        Regards extérieurs : 
+                        regards extérieurs : 
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -118,7 +118,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      Construction de marionnettes:
+                      construction de marionnettes :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -130,11 +130,11 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                        Décor :
+                        décor :
                     </div>
 
                     <div class="name text lightText sansSerif">
-                        Juan Perez Escala, VincentBourcier, Vincent Roudaut
+                        Juan Perez Escala, Vincent Bourcier, Vincent Roudaut
                     </div>
 
                 </div>
@@ -146,7 +146,7 @@
                     </div>
 
                     <div class="name text lightText sansSerif">
-                        En coursde distribution
+                        en cours de distribution
                     </div>
 
                 </div>
@@ -157,7 +157,7 @@
             <div class="jobBox">
 
                     <div class="job subTitle lightText sansSerif">
-                      Distribution
+                      Mentions
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -169,7 +169,7 @@
             <div class="jobBox job1">
 
                 <div class="job text lightText sansSerif">
-                   production:
+                   production :
                 </div>
 
                 <div class="name text lightText sansSerif">
@@ -181,25 +181,26 @@
             <div class="jobBox">
 
                 <div class="job text lightText sansSerif">
-                   co-producteurs:
+                   co-producteurs :
                 </div>
 
                 <div class="name text lightText sansSerif">
-                    -Festival Mondial des théâtres de marionnettes ( Charleville-Mézières) <br>
-                    -Théâtre à la coque –Centre National de la Marionnette *(Hennebont) <br>
-                    -Le Sablier -Centre National de la Marionnette *(Ifs-Dives) <br>
-                    -La Maison du Théâtre (Brest)Le Dôme (Saint-Avé)br
-                    -Le Centre Culturel Athéna (Auray) <br> 
-                    Le Théâtre de Laval –Centre National de la Marionnette *(Laval) <br>
-                    -Le Quartz, Scène Nationale (Brest) <br>
-                    -L’Espace Jéliote -Centre National de la Marionnette *(Oloron-Sainte-Marie) <br>
+                    - Festival Mondial des Théâtres de Marionnettes (Charleville-Mézières) <br>
+                    - Théâtre à la coque, Centre National de la Marionnette *(Hennebont) <br>
+                    - Le Sablier, Centre National de la Marionnette *(Ifs-Dives) <br>
+                    - La Maison du Théâtre (Brest) <br>
+                    - Le Dôme (Saint-Avé) <br>
+                    - Le Centre Culturel Athéna (Auray) <br> 
+                    - Le Théâtre de Laval, Centre National de la Marionnette *(Laval) <br>
+                    - Le Quartz, Scène Nationale (Brest) <br>
+                    - L’Espace Jéliote, Centre National de la Marionnette *(Oloron-Sainte-Marie) <br>
                     <br>
                     
                     
                 </div>
                 <span class="ps lightText sansSerif">
-                        * Label du Ministère de la Culture en préparationAvec le soutien de la 
-                        ville de Guilers, de la DRAC Bretagne.Autres demandes de soutiens institutionnels en cours
+                        * Label du Ministère de la Culture en préparation. Avec le soutien de la 
+                        ville de Guilers, de la DRAC Bretagne. Autres demandes de soutiens institutionnels en cours.
                     </span>
 
             </div>
