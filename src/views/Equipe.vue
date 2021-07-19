@@ -16,7 +16,7 @@
 
                     <p class="text lightText sansSerif">
 
-                        Musique
+                        Musicien
                     </p>
                     
 
@@ -29,10 +29,10 @@
             
                 <div class="textEquipeBox">
 
-                    <h1 class="subTitle lightText manuscrite">Bérangère</h1>
+                    <h1 class="subTitle lightText manuscrite">Églantine Quéllier</h1>
 
                     <p class="text lightText sansSerif">
-                        Costumes
+                        Costumière
                     </p>
                     
 
@@ -48,7 +48,7 @@
                     <h1 class="subTitle lightText manuscrite"> Vincent Bourcier</h1>
 
                     <p class="text lightText sansSerif">
-                        Décors
+                        Décorateur
                     </p>
                     
 
