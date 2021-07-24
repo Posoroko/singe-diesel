@@ -39,7 +39,7 @@
 
       <div class="juanBox">
 
-        <img class="portrait" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fportrait.jpg?alt=media&token=fcf6a4d3-b98e-4ab8-b40e-c8470c8c54b4" alt="Juan Perez-Escala">
+        <img class="portrait" src="https://i.ibb.co/thLffB0/portrait.jpg" alt="Juan Perez-Escala">
 
         <div class="juanTxtBox">
 
@@ -67,7 +67,7 @@
 
 
       
-      <img class="juanBureau" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fjuan-bureau-02.jpg?alt=media&token=1d50ce41-de85-43cc-bb3d-7e257ac6f166" alt="Juan Perez-Escala">
+      <img class="juanBureau" src="https://i.ibb.co/zn1KZF8/juan-bureau-02.jpg" alt="Juan Perez-Escala">
       
 
     
@@ -118,7 +118,7 @@ export default {
   .topImgBox{
     width: 100%;
     height: 100vh;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fscene-juan.jpg?alt=media&token=6ec0285d-d45c-426f-a0c9-85dccfa59279);
+    background-image: url(https://i.ibb.co/zXHHdHN/scene-juan.jpg);
     background-position: center;
     background-position-y: 65%;
     background-size: cover;

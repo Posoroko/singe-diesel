@@ -8,7 +8,7 @@
 
         <div class="suenoBox spectacleBox">
           
-            <img class="photoSpectacle" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FSue%C3%B1o%2Faffiche-sueno.jpg?alt=media&token=f03ca152-c552-490e-ab9c-ca811f4d75e9" alt="marionnettiste Sueño">
+            <img class="photoSpectacle" src="https://i.ibb.co/sq7bLXQ/affiche-sueno.jpg" alt="marionnettiste Sueño">
             
                 <div class="textSpectacleBox">
 
@@ -31,7 +31,7 @@
 
          <div class="kazuBox spectacleBox">
           
-            <img class="photoSpectacle" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FKazu%2Faffiche-kazu.jpg?alt=media&token=af2d4fac-3d3c-45da-aab6-435721185900" alt="kazu">
+            <img class="photoSpectacle" src="https://i.ibb.co/cCDnk9Z/affiche-kazu.jpg" alt="kazu">
             
                 <div class="textSpectacleBox">
 

@@ -4,7 +4,7 @@
 
     
 
-      <img @click="handleClick" class="logo pointer" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Flogo-long.png?alt=media&token=104ad1a5-4877-4818-bf34-318920f4ddae" alt="logo singe diesel">
+      <img @click="handleClick" class="logo pointer" src="https://i.ibb.co/FXWTVVx/logo-long.png" alt="logo singe diesel">
      
 
       

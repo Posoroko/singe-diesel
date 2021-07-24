@@ -8,7 +8,7 @@
 
         <div class="equipeBox">
           
-            <img class="photoEquipe" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fvincent.jpg?alt=media&token=f0e7902b-32db-4efc-98e3-f9b897aafd69">
+            <img class="photoEquipe" src="https://i.ibb.co/bBTZjW3/vincent.jpg">
             
                 <div class="textEquipeBox">
 
@@ -25,7 +25,7 @@
 
         <div class="equipeBox">
           
-            <img class="photoEquipe" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fb%C3%A9rang%C3%A8re.jpg?alt=media&token=695cd07e-e04e-45b3-9df4-ed25142c5a10">
+            <img class="photoEquipe" src="https://i.ibb.co/GQfXGN0/b-rang-re.jpg">
             
                 <div class="textEquipeBox">
 
@@ -41,8 +41,8 @@
         
         <div class="equipeBox">
           
-            <img class="photoEquipe" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fvince.jpg?alt=media&token=1698a55c-2251-49bb-88df-63a4cf202290">
-            
+            <img class="photoEquipe" src="https://i.ibb.co/cXpdK1s/vince.jpg">
+           
                 <div class="textEquipeBox">
 
                     <h1 class="subTitle lightText manuscrite"> Vincent Bourcier</h1>

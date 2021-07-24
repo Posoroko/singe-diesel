@@ -75,7 +75,7 @@ export default {
     padding-bottom: 3vh;
 }
 .juanTopImageBox{
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20misc%2Fportrait-triple-nb.jpg?alt=media&token=354eb3de-7fb1-496f-9e03-51037ba774d9);
+    background-image: url(https://i.ibb.co/Srn9dnn/portrait-triple-nb.jpg);
 }
 
 .textJuan{

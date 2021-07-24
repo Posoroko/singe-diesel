@@ -43,8 +43,8 @@
 
                 <div class="imageAndDate">
 
-                    <img class="miniature" v-if="doc.spectacle == 'Kazu' || doc.spectacle == 'Kazu dans la nuit' || doc.spectacle == 'Kazu et les hommes volants'" src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/miniatures%20spectacles%2Fminiatures%20Kazu%2Fkazu-miniature.jpg?alt=media&token=b5f8648b-f0d3-4d98-aa79-d99535091f99" alt="Kazu">
-                    <img class="miniature" v-if="doc.spectacle == 'Sueño' " src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/miniatures%20spectacles%2Fminiatures%20Sue%C3%B1o%2Fsue%C3%B1o-miniature.jpg?alt=media&token=a6a2f2ec-5abd-44cb-903b-3d18691ef8fb" alt="Sueño" >
+                    <img class="miniature" v-if="doc.spectacle == 'Kazu' || doc.spectacle == 'Kazu dans la nuit' || doc.spectacle == 'Kazu et les hommes volants'" src="https://i.ibb.co/dkNXphp/kazu-miniature.jpg" alt="Kazu">
+                    <img class="miniature" v-if="doc.spectacle == 'Sueño' " src="https://i.ibb.co/fMb5r2w/sue-o-miniature.jpg" alt="Sueño" >
 
                     <div class="when">
                         
