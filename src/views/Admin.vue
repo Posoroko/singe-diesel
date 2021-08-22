@@ -5,20 +5,19 @@
     <div class="adminPanel">
 
       <div class="tabBox">
-        <h2 class="" @click="changeTab('agenda')" v-if=" tab !== 'agenda' ">
-          agenda
-        </h2>
-        <h2 class="title tabText pointer isOn" @click="changeTab('agenda')" v-if=" tab === 'agenda' ">
+        
+        <h2 v-bind:class="{ isOn: tab == 'agenda'}" class="title tabText pointer" @click="changeTab('agenda')" >
           agenda
         </h2>
 
-        <h2 class="title tabText pointer" @click="changeTab('blog')" v-if=" tab !== 'blog' ">
+        <h2 v-bind:class="{ isOn: tab == 'blog'}" class="title tabText pointer" @click="changeTab('blog')" >
           blog
         </h2>
-        <h2 class="title tabText pointer isOn" @click="changeTab('blog')" v-if=" tab === 'blog' ">
-          blog
+        <h2 v-bind:class="{ isOn: tab == 'galerie'}" class="title tabText pointer" @click="changeTab('galerie')" >
+          Galerie
         </h2>
-        <button class="title tabText pointer" v-if='user' @click="logout">déconnexion</button>
+        
+        <button class="title tabText pointer logoutBtn" v-if='user' @click="logout">se déconnecter et quitter</button>
         <button class="title tabText pointer" v-if="!user" @click="goToLogin">se connecter</button>
         
       </div>
@@ -26,9 +25,8 @@
 
       <div class="componentBox" v-if="tab === 'agenda'">
         <Adminagenda @reload="reloadForm"/>
-      </div>
 
-      <section class="agenda">
+         <section class="agenda">
 
         
 
@@ -66,16 +64,15 @@
                 <button class="dateErase lightText sansSerif pointer" @click="eraseDate" :id="doc.id"  >supprimer</button>
                
             </div>
-
-            
-           
-
           </div>
-
-        
-
-
         </section>
+      </div>
+
+      <div class="componentBox" v-if="tab === 'galerie'">
+        <Galerie/>
+      </div>
+
+     
       
 
 
@@ -90,16 +87,18 @@
 </template>
 
 <script>
-import { ref, onBeforeUpdate } from 'vue'
+import { ref, onBeforeUpdate, onMounted } from 'vue'
 import useDocument from '@/composables/useDocument'
 import Adminagenda from '@/components/admin/Adminagenda.vue'
+import Galerie from '@/components/Galerie.vue'
 import { useRouter } from 'vue-router'
 import getUser from '@/composables/getUser'
 import getCollection from '@/composables/getCollection'
+import { projectAuth } from '@/firebase/config'
 
 export default {
 
-  components: { Adminagenda },
+  components: { Adminagenda, Galerie },
   setup(props, { emit }) {
     
     const { error, documents } = getCollection('agenda', 100) //collection et nombre max de date à afficher
@@ -108,9 +107,10 @@ export default {
     const router = useRouter()
     const { deleteDoc } = useDocument('agenda', docToBeDeleted)
     let docToBeDeleted = ''
-    
 
-    const { user } = getUser
+    const { user } = getUser()
+
+  
 
     const goToLogin = () => {
       router.push( { name: 'Login'})
@@ -146,13 +146,10 @@ export default {
         }
 
     onBeforeUpdate( () => {
-           documents.value.forEach(doc => {
-               
-               doc.date = new Date(doc.date).toLocaleDateString()  //transformation to local format
-           
-       });
-
-       })
+            documents.value.forEach(doc => {
+                doc.date = new Date(doc.date).toLocaleDateString()  //transformation to local format 
+            });
+    })
 
     const eraseDate = async (e) => {
       docToBeDeleted = e.target.id
@@ -166,8 +163,10 @@ export default {
 
 
     const changeTab = (e) => {
+      console.log(e)
       tab.value = e
     }
+    
 
     return { changeTab, logout, tab, user, error, documents, goToLogin, reloadForm, eraseDate }
   }
@@ -203,13 +202,12 @@ export default {
     padding: 5px;
     border-radius: 3px;
   }
-  .tabText:hover{
-    background-color: var(--funkytouch);
-  }
   .isOn{
     background-color: var(--funkytouch);
   }
- 
+  .logoutBtn{
+    background-color: red;
+  }
   
   
   

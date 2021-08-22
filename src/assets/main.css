@@ -57,7 +57,7 @@ font-family: Tangerine, cursive;
     --dark: #12171a;
     --lessdark: #1f1d19;
     --light: white;
-    --funkytouch: rgb(114, 143, 175);
+    --funkytouch: rgb(184, 180, 127);
 }
 /* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */ 
 .background{
