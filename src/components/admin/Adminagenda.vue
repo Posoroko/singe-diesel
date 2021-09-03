@@ -5,7 +5,7 @@
         <h1 class="titre">Agenda</h1>
       </div>
 
-      <h1 v-if="user"> connecté an tant que: {{user.email}}  </h1>
+
       
       
 
@@ -83,7 +83,7 @@
 import { ref } from 'vue'
 import { projectAuth, timestamp } from '@/firebase/config.js'
 import useCollection from '@/composables/useCollection'
-import Agenda from '@/components/Agenda.vue'
+
 
 
 export default {

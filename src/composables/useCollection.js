@@ -17,7 +17,7 @@ const useCollection = (collection) =>
 
         try
         {
-            await projectFirestore.collection(collection).add(doc)
+            await projectFirestore.collection(collection).doc(doc.name).set(doc) //.add(doc) if random dc id is needed
             isPending.value = false
         }
         catch(err)

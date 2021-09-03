@@ -21,6 +21,7 @@
         <button class="title tabText pointer" v-if="!user" @click="goToLogin">se connecter</button>
         
       </div>
+      <h1 v-if="user"> connecté an tant que: {{user.email}}  </h1>
       
 
       <div class="componentBox" v-if="tab === 'agenda'">
@@ -69,7 +70,7 @@
       </div>
 
       <div class="componentBox" v-if="tab === 'galerie'">
-        <Galerie/>
+        <Admingalery @reload="reloadForm"/>
       </div>
 
      
@@ -90,7 +91,7 @@
 import { ref, onBeforeUpdate, onMounted } from 'vue'
 import useDocument from '@/composables/useDocument'
 import Adminagenda from '@/components/admin/Adminagenda.vue'
-import Galerie from '@/components/Galerie.vue'
+import Admingalery from '@/components/admin/Admingalery.vue'
 import { useRouter } from 'vue-router'
 import getUser from '@/composables/getUser'
 import getCollection from '@/composables/getCollection'
@@ -98,7 +99,7 @@ import { projectAuth } from '@/firebase/config'
 
 export default {
 
-  components: { Adminagenda, Galerie },
+  components: { Adminagenda, Admingalery },
   setup(props, { emit }) {
     
     const { error, documents } = getCollection('agenda', 100) //collection et nombre max de date à afficher
@@ -134,21 +135,26 @@ export default {
         }
     }
 
-    //reloads the importImage (from importImage component) form
+    //reloads the importImage form
         function reloadForm() {
+            console.log('reloading')
+            const currentTab = tab.value
             tab.value = null
             setTimeout(resolve, 1)
             function resolve(){
-                tab.value = 'agenda'
+                tab.value = currentTab
             }
             
 
         }
 
     onBeforeUpdate( () => {
+        if(tab === 'agenda') {
             documents.value.forEach(doc => {
                 doc.date = new Date(doc.date).toLocaleDateString()  //transformation to local format 
             });
+        }
+            
     })
 
     const eraseDate = async (e) => {

@@ -16,7 +16,8 @@
       <router-link class="menu pointer" :to="{ name: 'Compagnie' }" >la compagnie</router-link>
       <router-link class="menu pointer" :to="{ name: 'Juanperezescala' }" >Juan Perez-Escala</router-link>
       <router-link @click="openMobileMenu" class="menu pointer" :to="{ name: 'Equipe' }" >équipe artistique</router-link>
-      <router-link class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link> 
+      <router-link class="menu pointer" :to="{ name: 'Pagespectacles' }" >spectacles</router-link>
+      <router-link class="menu pointer" :to="{ name: 'Galerie' }" >galerie</router-link> 
       <router-link class="menu pointer" :to="{ name: 'Agenda' }" >agenda</router-link>
       <router-link class="menu pointer" :to="{ name: 'Contact' }" >contact</router-link>
     </div>

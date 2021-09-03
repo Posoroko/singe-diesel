@@ -1,15 +1,23 @@
 import { ref, watchEffect } from 'vue'
 import { projectFirestore } from '../firebase/config'
 
-const getCollection = (collection, limit) => {
+const getCollection = (collection, limit, order) => {
 
   const documents = ref(null)
   const error = ref(null)
+  let collectionRef;
 
   // register the firestore collection reference
-  let collectionRef = projectFirestore.collection(collection)
+  //the 'ORDER' parametre defines if the documents need to be ordered by date or not
+  if(order) {
+    collectionRef = projectFirestore.collection(collection)
     .orderBy('date')
     .limit(limit)
+  } else {
+    collectionRef = projectFirestore.collection(collection)
+    .limit(limit)
+  }
+  
   const unsub = collectionRef.onSnapshot(snap => {
     let results = []
     snap.docs.forEach(doc => {
@@ -20,6 +28,7 @@ const getCollection = (collection, limit) => {
     // update values
     documents.value = results
     error.value = null
+    console.log(documents.value)
   }, err => {
     console.log(err.message)
     documents.value = null
