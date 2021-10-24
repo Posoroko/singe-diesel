@@ -150,6 +150,7 @@ export default {
   }
   .txtLaCie{
     width: min(90%, 800px);
+
   }
   .juanBox{
     width: 100%;

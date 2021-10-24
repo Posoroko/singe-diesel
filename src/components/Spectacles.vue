@@ -63,11 +63,12 @@ export default {
     .afficheBox{
         display: grid;
         place-items: center;
-
+        
     }
     .affiche{
         width: min(500px, 100vw);
         margin: 5vh;
+        box-shadow: 0 0 10px rgb(29, 27, 27);
     }
     
 </style>

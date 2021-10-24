@@ -62,6 +62,7 @@ font-family: Tangerine, cursive;
 /* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */ 
 .background{
     background-color: #141310;
+
 }
 .navAndFooter{
     background-color: var(--lessdark);

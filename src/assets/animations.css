@@ -1,0 +1,10 @@
+
+button{
+    transition: all 150ms;
+}
+
+button:hover{
+    box-shadow: 0 0 5px rgba(248, 248, 161, 0.472);
+    transform: scale(101%);
+    color: rgb(255, 195, 128);
+}
