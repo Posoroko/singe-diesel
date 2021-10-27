@@ -18,62 +18,98 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: "Cie de théâtre de marionnette | Singe Diesel"
+    }
   },
   {
     path: '/login',
     name: 'Login',
-    component: Login
+    component: Login,
+    meta: {
+      title: "login | Singe Diesel"
+    }
   },
   {
     path: '/admin',
     name: 'Admin',
-    component: Admin
+    component: Admin,
+    meta: {
+      title: "Admin | Singe Diesel"
+    }
   },
   {
     path: '/compagnie',
     name: 'Compagnie',
-    component: Compagnie
+    component: Compagnie,
+    meta: {
+      title: "La compagnie | Singe Diesel"
+    }
   },
   {
     path: '/spectacles',
     name: 'Pagespectacles',
-    component: Pagespectacles
+    component: Pagespectacles,
+    meta: {
+      title: "Les spectacles | Singe Diesel"
+    }
   },
   {
     path: '/agenda',
     name: 'Agenda',
-    component: Agenda
+    component: Agenda,
+    meta: {
+      title: "Agenda | Singe Diesel"
+    }
   },
   {
     path: '/juan-perez-escala',
     name: 'Juanperezescala',
-    component: Juanperezescala
+    component: Juanperezescala,
+    meta: {
+      title: "Juan Perez Escala | Singe Diesel"
+    }
   },
   {
     path: '/galerie',
     name: 'Galerie',
-    component: Galerie
+    component: Galerie,
+    meta: {
+      title: "Galerie | Singe Diesel"
+    }
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: Contact,
+    meta: {
+      title: "Contact | Singe Diesel"
+    }
   },
   {
     path: '/sueno',
     name: 'Sueno',
-    component: Sueno
+    component: Sueno,
+    meta: {
+      title: "Sueño | Singe Diesel"
+    }
   },
   {
     path: '/kazu',
     name: 'Kazu',
-    component: Kazu
+    component: Kazu,
+    meta: {
+      title: "Kazu | Singe Diesel"
+    }
   },
   {
     path: '/équipe',
     name: 'Equipe',
-    component: Equipe
+    component: Equipe,
+    meta: {
+      title: "L'équipe artistique | Singe Diesel"
+    }
   }
 
 
@@ -82,6 +118,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+router.beforeEach((to, from, next) => {
+    document.title = `${to.meta.title}`
+    next()
 })
 
 export default router

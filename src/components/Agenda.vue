@@ -43,7 +43,7 @@
           
                 <router-link class="pointer" :to="{ name: 'Agenda' }" >
                     <button class="lightText moreButton sansSerif">
-                      découvrir...
+                      voir toutes les dates
                     </button>
               </router-link>
             </div>

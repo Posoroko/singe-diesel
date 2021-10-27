@@ -10,11 +10,15 @@
 
                 <div class="afficheBigBox">
                     <div class="afficheBox">
-                        <img class="affiche" src="https://i.ibb.co/sq7bLXQ/affiche-sueno.jpg" alt="affiche Sueno Singe Diesel">
+                        <router-link class="pointer" :to="{ name: 'Sueno' }" >
+                            <img class="affiche" src="https://i.ibb.co/sq7bLXQ/affiche-sueno.jpg" alt="affiche Sueno Singe Diesel">
+                        </router-link>
                         <h1 class="subTitle lightText sansSerif">Sueno</h1>
                     </div>
                     <div class="afficheBox">
-                        <img class="affiche" src="https://i.ibb.co/cCDnk9Z/affiche-kazu.jpg" alt="affiche Kazu Singe Diesel">
+                        <router-link class="pointer" :to="{ name: 'Kazu' }" >
+                            <img class="affiche" src="https://i.ibb.co/cCDnk9Z/affiche-kazu.jpg" alt="affiche Kazu Singe Diesel">
+                        </router-link>
                         <h1 class="subTitle lightText sansSerif">Kazu</h1>
                     </div>
                 </div>
@@ -24,7 +28,7 @@
           
                 <router-link class="pointer" :to="{ name: 'Pagespectacles' }" >
                     <button class="lightText moreButton sansSerif">
-                      découvrir...
+                      tous les spectacles
                     </button>
               </router-link>
             </div>

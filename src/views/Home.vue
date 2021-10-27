@@ -29,7 +29,7 @@
             
               <router-link class="pointer" :to="{ name: 'Compagnie' }" >
                   <button class="lightText moreButton moreCompagnie sansSerif">
-                      découvrir...
+                      la compagnie
                   </button>
               </router-link>
             

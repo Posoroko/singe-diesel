@@ -98,7 +98,7 @@ button:active{
     position: relative;
 }
 .moreButton{
-    width: min(100%, 250px);
+    width: min(100%, 350px);
     padding: 20px;
     background-color: #352f24;
     border: 0px;
