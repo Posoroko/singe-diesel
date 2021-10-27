@@ -20,7 +20,8 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: "Cie de théâtre de marionnette | Singe Diesel"
+      title: "Cie de théâtre de marionnette | Singe Diesel",
+      description: "Basée à Guillers, dans le Finistère, Singe Diesel est une compagnie de théâtre d'envergure internationnale. Juan Perez Escala écrit et met en scène des spectacles empreints de douceur et de poésie."
     }
   },
   {
@@ -28,7 +29,8 @@ const routes = [
     name: 'Login',
     component: Login,
     meta: {
-      title: "login | Singe Diesel"
+      title: "login | Singe Diesel",
+      description: ""
     }
   },
   {
@@ -36,7 +38,8 @@ const routes = [
     name: 'Admin',
     component: Admin,
     meta: {
-      title: "Admin | Singe Diesel"
+      title: "Admin | Singe Diesel",
+      description: ""
     }
   },
   {
@@ -44,7 +47,8 @@ const routes = [
     name: 'Compagnie',
     component: Compagnie,
     meta: {
-      title: "La compagnie | Singe Diesel"
+      title: "La compagnie | Singe Diesel",
+      description: "Singe Diesel compte actuellement plus de 200 marionnettes, construites dans différents supports (papier, bois, mousse) et 6 spectacles dont 3 sont encore en diffusion à une échelle locale et internationale."
     }
   },
   {
@@ -52,7 +56,8 @@ const routes = [
     name: 'Pagespectacles',
     component: Pagespectacles,
     meta: {
-      title: "Les spectacles | Singe Diesel"
+      title: "Les spectacles | Singe Diesel",
+      description: "Les spectacles écrit et produits par la compagnie Singe Diesel."
     }
   },
   {
@@ -60,7 +65,8 @@ const routes = [
     name: 'Agenda',
     component: Agenda,
     meta: {
-      title: "Agenda | Singe Diesel"
+      title: "Agenda | Singe Diesel",
+      description: "Toutes les dates des représentations à venir."
     }
   },
   {
@@ -68,7 +74,8 @@ const routes = [
     name: 'Juanperezescala',
     component: Juanperezescala,
     meta: {
-      title: "Juan Perez Escala | Singe Diesel"
+      title: "Juan Perez Escala | Singe Diesel",
+      description: "Juan Perez Escala, génie de la marionnette, écrit et met en scène les spectacles de la compagnie Singe Diesel."
     }
   },
   {
@@ -76,7 +83,8 @@ const routes = [
     name: 'Galerie',
     component: Galerie,
     meta: {
-      title: "Galerie | Singe Diesel"
+      title: "Galerie | Singe Diesel",
+      description: "Photo et dessins issus des productions de la compagnie Singe Diesel"
     }
   },
   {
@@ -84,7 +92,8 @@ const routes = [
     name: 'Contact',
     component: Contact,
     meta: {
-      title: "Contact | Singe Diesel"
+      title: "Contact | Singe Diesel",
+      description: "Contactez-nous pour toute question ou requête."
     }
   },
   {
@@ -92,7 +101,8 @@ const routes = [
     name: 'Sueno',
     component: Sueno,
     meta: {
-      title: "Sueño | Singe Diesel"
+      title: "Sueño | Singe Diesel",
+      description: "À travers personnages et situations imaginaires, Juan développe un ailleurs de tous les possibles, dévoilant l’intimité de Tom, un sans-abri aveugle qui refuse de voir le monde réel."
     }
   },
   {
@@ -100,7 +110,8 @@ const routes = [
     name: 'Kazu',
     component: Kazu,
     meta: {
-      title: "Kazu | Singe Diesel"
+      title: "Kazu | Singe Diesel",
+      description: "Une plongée dans l’atelier de marionnettes de Juan Perez Escala et dans l’univers du réalisme magique et de la micro fiction, courant artistique d’Amérique du Sud."
     }
   },
   {
@@ -108,7 +119,8 @@ const routes = [
     name: 'Equipe',
     component: Equipe,
     meta: {
-      title: "L'équipe artistique | Singe Diesel"
+      title: "L'équipe artistique | Singe Diesel",
+      description: "Membres de l'équipe artistique de la compagnie Singe Diesel."
     }
   }
 
@@ -121,6 +133,9 @@ const router = createRouter({
 })
 router.beforeEach((to, from, next) => {
     document.title = `${to.meta.title}`
+    // const tag = document.getElementsByName('description')[0]
+    // tag.setAttribute("content", "test")
+    document.getElementsByName('description')[0].setAttribute("content", `${to.meta.description}`)
     next()
 })
 
