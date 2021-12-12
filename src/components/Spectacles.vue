@@ -11,7 +11,7 @@
                     <div class="strokeBox ">
                         <!-- <Stroke /> -->
                     </div>
-                    <span class="textOnStroke absolute">Spectacles</span>
+                    <span class="textOnStroke ">Spectacles</span> <!-- <remettre absolute pour ajouter le coup de pinceau /> -->
                 </h1>
             </div>
 
