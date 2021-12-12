@@ -68,10 +68,12 @@
         </div>
 
       </div>
-
+      <div class=" juanBureauBox width">
+        <img class="juanBureau" src="https://i.ibb.co/zn1KZF8/juan-bureau-02.jpg" alt="Juan Perez-Escala">
+      </div>
 
       
-      <img class="juanBureau" src="https://i.ibb.co/zn1KZF8/juan-bureau-02.jpg" alt="Juan Perez-Escala">
+      
       
 
     
@@ -198,7 +200,9 @@ export default {
     mix-blend-mode: lighten;
 
   }
-  
+  .juanBureauBox{
+    background-color: #141310;
+  }
   .juanBureau{
     width: 100%;
     mix-blend-mode: lighten;

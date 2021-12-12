@@ -63,7 +63,7 @@ font-family: Tangerine, cursive;
 /* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */ 
 .background{
     background-color: #141310;
-
+    /* background: radial-gradient(circle, rgba(46,40,34,1) 0%, rgba(20,19,16,1) 100%); */
 }
 .navAndFooter{
     background-color: var(--lessdark);
@@ -79,7 +79,9 @@ font-family: Tangerine, cursive;
 .pointer{
     cursor: pointer;
 }
-
+.width{
+  width: 100%;
+}
 button:active{
     background-color: var(--funkytouch);
 }
