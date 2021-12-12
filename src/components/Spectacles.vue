@@ -9,7 +9,7 @@
 
                 <h1 class="title lightText titleFont relative titleStrokeBox" >
                     <div class="strokeBox ">
-                        <Stroke />
+                        <!-- <Stroke /> -->
                     </div>
                     <span class="textOnStroke absolute">Spectacles</span>
                 </h1>

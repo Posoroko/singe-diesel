@@ -1,10 +1,10 @@
 <template>
-  <section class="home background">
+  <section class="home background noise">
     <div class="topImgBox">
       <!-- top image is set as a background in css -->
     </div>
     <div class="bandeauBox">
-      <h1 class="bandeau shippori">
+      <h1 class="bandeau shippori cieTheMar">
         COMPAGNIE DE THEATRE DE MARIONNETTES
       </h1>
     </div>
@@ -44,7 +44,7 @@
         <div class="juanTxtBox">
 
           <p class="juanTitle titleFont title relative titleStrokeBox" >
-              <Stroke />
+              <!-- <Stroke /> -->
             <span class="absolute">Juan <br> Perez-Escala</span>
           </p>
          
@@ -110,8 +110,23 @@ export default {
     //activer le bouton 'toutes les dates' de l'agenda
     let button = true
     const nombreMaxDeDate = ref(3)
+    
+    let num = -100 + (window.scrollY * 0.15)
+    const cieTheMarOffset = ref('-100%')
 
-    return { button, nombreMaxDeDate }
+    window.addEventListener('scroll', () => {
+      if(num <= 1){
+        num = -100 + (window.scrollY * 0.15)
+        if(num > 1) {
+          num = 0
+        }
+        cieTheMarOffset.value = num + '%'
+        console.log(cieTheMarOffset.value)
+      }
+      
+    })
+
+    return { button, nombreMaxDeDate, cieTheMarOffset }
   }
 }
 </script>
@@ -133,8 +148,12 @@ export default {
     justify-content: center;
     align-content: center;
     overflow: hidden;
+    z-index: 1;
   }
-  
+  .cieTheMar{
+    position: relative;
+    top: v-bind('cieTheMarOffset');
+  }
   p{
     color: light;
   }
@@ -142,6 +161,7 @@ export default {
     width: 100%;
     display: grid;
     place-items: center;
+    z-index: -1;
   }
   .bandeau{
     color: var(--light);

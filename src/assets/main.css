@@ -60,11 +60,15 @@ font-family: Tangerine, cursive;
     --light: white;
     --funkytouch: rgb(184, 180, 127);
 }
-/* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */ 
+/* background: radial-gradient(ellipse at center,#192d38 0,#211f2f 100%);  */
+/* background-color: #141310; */
 .background{
-    background-color: #141310;
-    /* background: radial-gradient(circle, rgba(46,40,34,1) 0%, rgba(20,19,16,1) 100%); */
+  /* background-color: #141310; */
+  /* background-color: #2195cb; */
 }
+/* .noise{
+    background-image: url('noiseFilter.svg');
+} */
 .navAndFooter{
     background-color: var(--lessdark);
 }
@@ -82,9 +86,7 @@ font-family: Tangerine, cursive;
 .width{
   width: 100%;
 }
-button:active{
-    background-color: var(--funkytouch);
-}
+
 
 /* common stylies */
 
@@ -95,7 +97,10 @@ button:active{
   position: absolute;
 }
 
-
+body {
+  background-color: #141310;
+background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png");
+}
 
 .moreButtonBox{
     width: 100%;
@@ -106,10 +111,10 @@ button:active{
 }
 .moreButton{
     width: min(100%, 350px);
-    padding: 20px;
-    background-color: #352f24;
+    padding: 10px 20px;
+    background-color: #1a1917;
     border: 0px;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: max(2vh, 12px);
     cursor: pointer;
     text-decoration: none;
