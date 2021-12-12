@@ -70,12 +70,9 @@ export default {
         
 
        onBeforeUpdate( () => {
-           documents.value.forEach(doc => {
-               
+           documents.value.forEach(doc => { 
                doc.date = new Date(doc.date).toLocaleDateString()  //transformation to local format for
-           
-       });
-
+           });
        })
        
     

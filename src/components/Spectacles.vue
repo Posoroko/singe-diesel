@@ -5,21 +5,32 @@
         <div class="bigBox">
 
             <div class="titleBox">
-                <h1 class="title lightText titleFont">Spectacles</h1>
+                
+
+                <h1 class="title lightText titleFont relative titleStrokeBox" >
+                    <div class="strokeBox ">
+                        <Stroke />
+                    </div>
+                    <span class="textOnStroke absolute">Spectacles</span>
+                </h1>
             </div>
 
                 <div class="afficheBigBox">
                     <div class="afficheBox">
                         <router-link class="pointer" :to="{ name: 'Sueno' }" >
-                            <img class="affiche" src="https://i.ibb.co/sq7bLXQ/affiche-sueno.jpg" alt="affiche Sueno Singe Diesel">
+                            <img class="affiche shadow" src="https://i.ibb.co/sq7bLXQ/affiche-sueno.jpg" alt="affiche Sueno Singe Diesel">
                         </router-link>
-                        <h1 class="subTitle lightText sansSerif">Sueno</h1>
+                        <router-link class="pointer link" :to="{ name: 'Kazu' }" >
+                            <h1 class="subTitle lightText sansSerif">Sueno</h1>
+                        </router-link>
                     </div>
                     <div class="afficheBox">
                         <router-link class="pointer" :to="{ name: 'Kazu' }" >
-                            <img class="affiche" src="https://i.ibb.co/cCDnk9Z/affiche-kazu.jpg" alt="affiche Kazu Singe Diesel">
+                            <img class="affiche shadow" src="https://i.ibb.co/cCDnk9Z/affiche-kazu.jpg" alt="affiche Kazu Singe Diesel">
                         </router-link>
-                        <h1 class="subTitle lightText sansSerif">Kazu</h1>
+                        <router-link class="pointer link" :to="{ name: 'Kazu' }" >
+                            <h1 class="subTitle lightText sansSerif">Kazu</h1>
+                        </router-link>
                     </div>
                 </div>
             
@@ -41,8 +52,11 @@
 </template>
 
 <script>
+import Stroke from '@/components/Stroke'
+
 export default {
     props: {  },
+    components: { Stroke },
     setup(){
 
     }
@@ -67,12 +81,11 @@ export default {
     .afficheBox{
         display: grid;
         place-items: center;
-        
+        margin: 2vh;
     }
     .affiche{
         width: min(500px, 100vw);
-        margin: 5vh;
-        box-shadow: 0 0 10px rgb(29, 27, 27);
+
     }
     
 </style>

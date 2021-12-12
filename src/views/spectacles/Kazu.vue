@@ -183,8 +183,9 @@ export default {
 
 <style scoped>
 .kazuTopImgBox{
-    background-image: url(https://i.ibb.co/0tG6TLK/grand-pere-juan.jpg);
+    background-image: url("https://i.ibb.co/gTwKpv2/bandeau-kazu.jpg");
 }
 
 
 </style>
+

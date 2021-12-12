@@ -102,7 +102,7 @@ export default {
   components: { Adminagenda, Admingalery },
   setup(props, { emit }) {
     
-    const { error, documents } = getCollection('agenda', 100) //collection et nombre max de date à afficher
+    const { error, documents } = getCollection('agenda', 100, true) //collection et nombre max de date à afficher
     const tab = ref('agenda')
     const isPending = ref(false)
     const router = useRouter()
@@ -149,13 +149,14 @@ export default {
         }
 
     onBeforeUpdate( () => {
-        if(tab === 'agenda') {
+        if(tab.value === 'agenda') {
             documents.value.forEach(doc => {
                 doc.date = new Date(doc.date).toLocaleDateString()  //transformation to local format 
             });
         }
             
     })
+ 
 
     const eraseDate = async (e) => {
       docToBeDeleted = e.target.id

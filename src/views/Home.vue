@@ -43,7 +43,11 @@
 
         <div class="juanTxtBox">
 
-          <h1 class="juanTitle titleFont">Juan <br> Perez-Escala</h1>
+          <p class="juanTitle titleFont title relative titleStrokeBox" >
+              <Stroke />
+            <span class="absolute">Juan <br> Perez-Escala</span>
+          </p>
+         
 
           <p class="text lightText sansSerif">
             Fils d'un comédien de la Comedia d’Argentine, et directeur du “theatre del bosque”, Juan est immergé dans le 
@@ -95,10 +99,11 @@
 import { ref } from 'vue'
 import Spectacles from '@/components/Spectacles.vue'
 import Agenda from '@/components/Agenda.vue'
+import Stroke from '@/components/Stroke.vue'
 
 export default {
   name: 'Home',
-  components: { Spectacles, Agenda },
+  components: { Spectacles, Agenda, Stroke },
   setup(){
     //activer le bouton 'toutes les dates' de l'agenda
     let button = true
@@ -161,7 +166,7 @@ export default {
     flex-wrap: wrap;
   }
   .juanTitle{
-    font-size: max(3vw, 30px);
+    font-size: max(3vw, 40px);
     line-height: 90%;
   }
   .portrait{
@@ -179,6 +184,7 @@ export default {
   .juanTitle{
     color: var(--light);
     margin: 50px 0px;
+    position: relative;
   }
   
   .grandPereBox{
@@ -197,4 +203,5 @@ export default {
     width: 100%;
     mix-blend-mode: lighten;
   }
+
 </style>

@@ -12,7 +12,7 @@
             
                 <div class="textEquipeBox">
 
-                    <h1 class="subTitle lightText manuscrite">Vincent Rodaut</h1>
+                    <h1 class="subTitle lightText manuscrite">Vincent Roudaut</h1>
 
                     <p class="text lightText sansSerif">
 
@@ -32,7 +32,7 @@
                     <h1 class="subTitle lightText manuscrite">Églantine Quéllier</h1>
 
                     <p class="text lightText sansSerif">
-                        Costumière
+                        Plasticienne
                     </p>
                     
 
