@@ -106,7 +106,6 @@ export default {
     const nombreMaxDeDate = 100
     const admin = ref(true);
 
-
     let dateString = ''
     const date = new Date()
 
@@ -118,7 +117,7 @@ export default {
       
       if(user){
         
-        if(year.value, month.value, day.value, heure.value && spectacle.value && ville.value && codePostal.value){
+        if(year.value, month.value, day.value && spectacle.value && ville.value && codePostal.value){
           
           dateString = year.value + '-' + month.value + '-' + day.value
           

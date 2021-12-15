@@ -20,17 +20,16 @@
         <div class="showBox">
 
             <p class=" lightText textShow text sansSerif">
-                
-                    Tom est un homme qui vit dans la rue, Tom est un homme qui vit dans sa tête. 
-                    Il est aveugle, mais ne voudrait pas voir le monde réel. 
-                    Il s’y sent mal à l’aise, comme un phoque sur une banquise. 
-                    Alors il plonge dans ses rêves, et retrouve sa grâce. 
+
+                    Juan Perez Escala nous embarque dans une performance marionnettique inspirée par le “Major Tom” de David Bowie. 
+                    Le spectateur est invité à suivre Tom, un homme qui vit dans la rue, mais passe le plus clair de son temps dans sa tête. 
+                    Il est aveugle, mais ne voudrait pas voir le monde réel. Il s’y sent mal à l’aise, alors il plonge dans ses rêves et retrouve sa grâce. 
+                    À travers personnages et situations imaginaires, le marionnettiste développe un ailleurs de tous les possibles et nous apprend 
+                    qu’il faut parfois fermer les yeux pour voir la poésie.
                     <br>
-                    
-                    À travers personnages et situations imaginaires, Juan développe un ailleurs de tous les possibles, 
-                    dévoilant l’intimité de Tom. 
-                    Et dans les recoins sombres de l’âme, fait naître une poésie de l’existence, 
-                    avec la force du désir et de l’amour.
+                    <br>
+                    C’est en effet un voyage onirique dans les mondes de Tom auquel nous convie Juan Perez Escala. Et ce notamment par une 
+                    performance de jeu presque sensorielle : c’est avec les yeux bandés que l’artiste manipule son personnage.
             </p>
             <div class="showImgBox">
                 <img src="https://firebasestorage.googleapis.com/v0/b/singe-diesel.appspot.com/o/images%20spectacles%2FSue%C3%B1o%2Fsueno01.jpg?alt=media&token=01fa7026-dad3-440b-b675-e78621ad7de9" alt="">
@@ -70,7 +69,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      jeu, manipulation :
+                      jeu :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -94,7 +93,7 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                      aide à la dramaturgie :
+                      Accompagnement à la dramaturgie :
                     </div>
 
                     <div class="name text lightText sansSerif">
@@ -106,11 +105,11 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                        regards extérieurs : 
+                        regard extérieur : 
                     </div>
 
                     <div class="name text lightText sansSerif">
-                        Pierre Tual et Santiago Moreno
+                        Pierre Tual
                     </div>
 
                 </div>
@@ -122,7 +121,7 @@
                     </div>
 
                     <div class="name text lightText sansSerif">
-                        Juan Perez Escala, Antonin Lebrun, Eglantine Quellier
+                        Juan Perez Escala assisté d’Eglantine Quellier et Antonin Lebrun
                     </div>
 
                 </div>
@@ -130,26 +129,15 @@
                 <div class="jobBox">
 
                     <div class="job text lightText sansSerif">
-                        décor :
+                        lumière et décor :
                     </div>
 
                     <div class="name text lightText sansSerif">
-                        Juan Perez Escala, Vincent Bourcier, Vincent Roudaut
+                        Vincent Bourcier
                     </div>
 
                 </div>
 
-                <div class="jobBox">
-
-                    <div class="job text lightText sansSerif">
-                      lumières :
-                    </div>
-
-                    <div class="name text lightText sansSerif">
-                        en cours de distribution
-                    </div>
-
-                </div>
           </div>
 
           <div class="mentions">

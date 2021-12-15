@@ -22,6 +22,7 @@
           <li class="drop-down-item drop-down-empty"><br></li>
           <li class="drop-down-item menu-hover"><router-link class="drop-down-link link" :to="{ name: 'Sueno' }" >Sueno</router-link></li>
           <li class="drop-down-item menu-hover"><router-link class="drop-down-link link" :to="{ name: 'Kazu' }" >Kazu</router-link></li>
+          <li class="drop-down-item menu-hover"><router-link class="drop-down-link link" :to="{ name: 'Metaphores' }" >Metaphores</router-link></li>
         </ul>
       </router-link>
       <router-link class="menu pointer menu-hover" :to="{ name: 'Galerie' }" >galerie</router-link> 

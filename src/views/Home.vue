@@ -98,7 +98,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import Spectacles from '@/components/Spectacles.vue'
 import Agenda from '@/components/Agenda.vue'
 import Stroke from '@/components/Stroke.vue'
@@ -114,7 +114,7 @@ export default {
     let num = -100 + (window.scrollY * 0.15)
     const cieTheMarOffset = ref('-100%')
 
-    window.addEventListener('scroll', () => {
+    const scrollListener = () => {
       if(num <= 1){
         num = -100 + (window.scrollY * 0.15)
         if(num > 1) {
@@ -124,7 +124,18 @@ export default {
         console.log(cieTheMarOffset.value)
       }
       
+    }
+
+    
+
+    onMounted(()=> {
+      window.addEventListener('scroll', scrollListener)
     })
+
+    onUnmounted(() => {
+      window.removeEventListener("scroll", scrollListener)
+    })
+    
 
     return { button, nombreMaxDeDate, cieTheMarOffset }
   }

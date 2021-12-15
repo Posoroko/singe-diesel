@@ -6,14 +6,14 @@
 
       <div class="tabBox">
         
-        <h2 v-bind:class="{ isOn: tab == 'agenda'}" class="title tabText pointer" @click="changeTab('agenda')" >
+        <h2 v-bind:class="{ isOn: tab == 'agenda'}" class="title tabText pointer" @click="changeTab" name="agenda" >
           agenda
         </h2>
 
-        <h2 v-bind:class="{ isOn: tab == 'blog'}" class="title tabText pointer" @click="changeTab('blog')" >
+        <!-- <h2 v-bind:class="{ isOn: tab == 'blog'}" class="title tabText pointer" name="blog" >
           blog
-        </h2>
-        <h2 v-bind:class="{ isOn: tab == 'galerie'}" class="title tabText pointer" @click="changeTab('galerie')" >
+        </h2> -->
+        <h2 v-bind:class="{ isOn: tab == 'galerie'}" class="title tabText pointer" @click="changeTab" name="galerie" >
           Galerie
         </h2>
         
@@ -24,7 +24,7 @@
       <h1 v-if="user"> connecté an tant que: {{user.email}}  </h1>
       
 
-      <div class="componentBox" v-if="tab === 'agenda'">
+      <div class="componentBox relative" v-if="tab === 'agenda'">
         <Adminagenda @reload="reloadForm"/>
 
          <section class="agenda">
@@ -61,26 +61,46 @@
                 <div class="where">
                     <span class="dateInfo ville sansSerif"> {{doc.lieu}} - {{doc.ville}} - ({{doc.codePostal}}) </span>             
                 </div>
+                <div class="dateButtonBox">
+                  <button class="dateButton lightText sansSerif pointer" :name="doc.id" @click="modifyDate">Modifier</button>
+                  <button class="dateButton lightText sansSerif pointer" @click="eraseDate" :id="doc.id"  >supprimer</button>
+                </div>
                 
-                <button class="dateErase lightText sansSerif pointer" @click="eraseDate" :id="doc.id"  >supprimer</button>
                
             </div>
           </div>
         </section>
+
+        <div class="modifyDateBox" v-if="modActivated">
+
+            <form ref="modifyForm" class="modifyForm" @submit.prevent="submitModification">
+              <h1 class="lightText titleFont" >Modification <span class="material-icons pointer" @click="modActivated = !modActivated">close</span></h1>
+              <input name="modDay" class="modDay modItem" type="text">
+              <input class="modmonth modItem" type="text">
+              <input class="modyear modItem" type="text">
+              <input class="modTime modItem" type="text">
+              <input class="spectacle modItem" type="text">
+              <input class="modPlace modItem" type="text">
+              <input class="modCity modItem" type="text">
+              <input class="modCode modItem" type="text">
+              <div class="buttonBox">
+                <button>confirmer</button>
+              </div>
+              
+            </form>
+
+        </div>
+
+close
+
       </div>
 
       <div class="componentBox" v-if="tab === 'galerie'">
-        <Admingalery @reload="reloadForm"/>
+        <Admingalery @reload="reloadForm" />
       </div>
 
-     
-      
-
-
-
-
-
     </div>
+    
     
       
   </section>
@@ -108,10 +128,9 @@ export default {
     const router = useRouter()
     const { deleteDoc } = useDocument('agenda', docToBeDeleted)
     let docToBeDeleted = ''
-
     const { user } = getUser()
-
-  
+    const modActivated = ref(false)
+    const modifyForm = ref(null)
 
     const goToLogin = () => {
       router.push( { name: 'Login'})
@@ -137,7 +156,6 @@ export default {
 
     //reloads the importImage form
         function reloadForm() {
-            console.log('reloading')
             const currentTab = tab.value
             tab.value = null
             setTimeout(resolve, 1)
@@ -147,9 +165,10 @@ export default {
             
 
         }
-
+    let dateFormated = false  //vérfie que le formatage en français ne soit fait qu'une seule fois
     onBeforeUpdate( () => {
-        if(tab.value === 'agenda') {
+        if(tab.value === 'agenda' && !dateFormated) {
+          dateFormated = true
             documents.value.forEach(doc => {
                 doc.date = new Date(doc.date).toLocaleDateString()  //transformation to local format 
             });
@@ -160,22 +179,23 @@ export default {
 
     const eraseDate = async (e) => {
       docToBeDeleted = e.target.id
-      
       await deleteDoc(e.target.id)
+    }
+    const modifyDate = (e) => {
+      modActivated.value = true
+      let result = documents.value.filter(obj => {
+        return obj.id === e.target.name
+      })
+      console.log(modifyForm.value)
       
     }
 
-
-
-
-
     const changeTab = (e) => {
-      console.log(e)
-      tab.value = e
+      tab.value = e.target.name
     }
     
 
-    return { changeTab, logout, tab, user, error, documents, goToLogin, reloadForm, eraseDate }
+    return { changeTab, logout, tab, user, error, documents, goToLogin, reloadForm, eraseDate, modifyDate, modActivated, modifyForm }
   }
   
 }
@@ -216,7 +236,28 @@ export default {
     background-color: red;
   }
   
-  
-  
 
+  .modifyDateBox{
+    width: min(500px, 95%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: var(--lessdark);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white;
+  }
+  .modifyForm{
+    display: flex;
+    flex-direction: column;
+  }
+  .modItem{
+    margin: 5px 0px;
+    font-size: 25px;
+  }
+  .modifyForm > h1{
+    display: flex;
+    justify-content: space-between;
+  }
 </style>

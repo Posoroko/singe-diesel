@@ -10,8 +10,10 @@ import Galerie from '@/views/Galerie'
 import Contact from '@/views/Contact'
 import Equipe from '@/views/Equipe'
 
+
 import Sueno from '@/views/spectacles/Sueno'
 import Kazu from '@/views/spectacles/Kazu'
+import Metaphores from '@/views/spectacles/Metaphores'
 
 
 const routes = [
@@ -112,6 +114,15 @@ const routes = [
     meta: {
       title: "Kazu | Singe Diesel",
       description: "Une plongée dans l’atelier de marionnettes de Juan Perez Escala et dans l’univers du réalisme magique et de la micro fiction, courant artistique d’Amérique du Sud."
+    }
+  },
+  {
+    path: '/metaphores',
+    name: 'Metaphores',
+    component: Metaphores,
+    meta: {
+      title: "Metaphores | Singe Diesel",
+      description: "Ni mensonge, ni vérité, une métaphore est un voyage plus long, plus difficile, mais plus beau."
     }
   },
   {
