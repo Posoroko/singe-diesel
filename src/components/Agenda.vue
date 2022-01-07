@@ -114,6 +114,7 @@ export default {
             activeShow.value = 'all'
         }
 
+        //allume le bouton de spectacle sélectionné
         const highlightButton = (name) => {
             sueno.value = false
             nuit.value = false
