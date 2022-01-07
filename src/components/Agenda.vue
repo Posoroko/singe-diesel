@@ -109,6 +109,7 @@ export default {
             activeShow.value = e.target.name
         }
         const getAll = () => {
+            highlightButton("all")
             dateSelection.value = documents.value
             activeShow.value = 'all'
         }
