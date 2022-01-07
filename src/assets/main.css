@@ -99,15 +99,14 @@ body {
 background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png");
 }
 
-.moreButtonBox, buttonBox
-{
+.moreButtonBox {
     width: 100%;
     padding: 5vh 20% 0 0;
     display: flex;
     justify-content: flex-end;
     position: relative;
 }
-.moreButton{
+.moreButton, button{
     width: min(100%, 350px);
     padding: 10px 20px;
     background-color: #1a1917;

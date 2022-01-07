@@ -150,9 +150,10 @@ export default {
     text-shadow: 0 0 10px rgb(255, 255, 255);
     font-weight: 700;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.096);
+    background-color: rgba(255, 255, 255, 0.151);
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.337);
 }
 .metaphoresInfos{
     font-size: max(1vw, 12px);

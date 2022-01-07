@@ -55,8 +55,37 @@
                 </div>
         </div>
         
+          <div class="kazuBox spectacleBox">
+          
+            <img class="photoSpectacle" src="https://i.ibb.co/kXBCr4J/M-taphores.jpg" alt="kazu">
+            
+                <div class="textSpectacleBox">
+
+                    <h1 class="title spectacleTitle lightText manuscrite">Métaphores</h1>
+
+                    <p class="textSpectacle text sansSerif">
+                         "Ni mensonge, ni vérité, une métaphore est un voyage plus long, plus difficile, mais plus beau".
+                         <br>
+                         Prochaine création Singe Diesel prévue en septembre 2023
+                    </p>
+                    
+                   
+                    <div class="moreButtonBox">
+          
+                        <router-link class="pointer" :to="{ name: 'Metaphores' }" >
+                            <button class="lightText moreButton sansSerif">
+                                découvrir...
+                            </button>
+                        </router-link>
+                    </div>
+
+                </div>
+        </div>
 
   </section>
+
+
+
 
 </template>
 
