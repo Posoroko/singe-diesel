@@ -7,7 +7,7 @@
                 <div class="metaphoreTextBox absolute">
 
                     <div class="metaphoresTitleBox">
-                        <h1 class="metaphoresTitle darkText titleFont ">Métaphores</h1>
+                        <h1 class="metaphoresTitle darkText titleFont ">Chemin des métaphores</h1>
                         <p class="metaphoresAge">à partir de 5 ans</p>
                     </div>
 
@@ -21,25 +21,11 @@
                         <h2 class="metaphoresInfos darkText sansSerif">
                             Création prévue en septembre 2023
                         </h2>
-
-                        
-
                     </div>
-
                 </div>
-
         </section>
 
-          
-
-        
-    
-        
-
-
         <div class="showScore">
-          
-
             <div class="distribution">
                 <div class="jobBox">
 

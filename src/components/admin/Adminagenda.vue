@@ -58,6 +58,7 @@
             <option>Sueño</option>
             <option>Kazu et les hommes volants</option>
             <option>Kazu dans la nuit</option>
+            <option>Chemin des métaphores</option>
         </select>
 
 
